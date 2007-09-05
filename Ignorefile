@@ -1,0 +1,11 @@
+<ignore xmlns='http://www.codeplex.com/schema/IgnoreListSchema-1.0.xsd'>
+  <add recursive='true'>bin</add>
+  <add recursive='true'>obj</add>
+  <add recursive='true'>debug</add>
+  <add recursive='true'>release</add>
+  <add recursive='true'>output</add>
+  <add recursive='true'>*.suo</add>
+  <add recursive='true'>*.user</add>
+  <add recursive='true'>*.pfx</add>
+  <add>*.xml</add>
+</ignore>

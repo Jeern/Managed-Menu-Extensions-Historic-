@@ -1,0 +1,3 @@
+del /S /Q output\*
+
+
