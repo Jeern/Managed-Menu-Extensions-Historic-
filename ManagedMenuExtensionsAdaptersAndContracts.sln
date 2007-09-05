@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedMenuAddInAdapters", "ManagedMenuAddInAdapters\ManagedMenuAddInAdapters.csproj", "{DE9B952E-53CB-41E3-9D8D-31673642B56D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedMenuAddInViews", "ManagedMenuAddInViews\ManagedMenuAddInViews.csproj", "{72CB31A6-2E61-43E1-91FB-28F4945FAD9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedMenuContracts", "ManagedMenuContracts\ManagedMenuContracts.csproj", "{B4F6032A-AB93-4601-BBBA-4B784152E84D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedMenuHost", "ManagedMenuHost\ManagedMenuHost.csproj", "{0C14523F-14FD-45C3-99E4-9B5B8157B720}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedMenuHostAdapters", "ManagedMenuHostAdapters\ManagedMenuHostAdapters.csproj", "{37D2850B-9377-48D7-AE49-818EE6A3EBE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedMenuHostViews", "ManagedMenuHostViews\ManagedMenuHostViews.csproj", "{2EE7C4ED-EC99-4821-A280-B72D58C9EA6F}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ManagedMenuExtensions", "ManagedMenuExtensions\ManagedMenuExtensions.vdproj", "{F1D8F39A-57D7-4996-B3FA-D3CB42E99AC6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE9B952E-53CB-41E3-9D8D-31673642B56D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE9B952E-53CB-41E3-9D8D-31673642B56D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE9B952E-53CB-41E3-9D8D-31673642B56D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE9B952E-53CB-41E3-9D8D-31673642B56D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72CB31A6-2E61-43E1-91FB-28F4945FAD9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72CB31A6-2E61-43E1-91FB-28F4945FAD9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72CB31A6-2E61-43E1-91FB-28F4945FAD9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72CB31A6-2E61-43E1-91FB-28F4945FAD9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4F6032A-AB93-4601-BBBA-4B784152E84D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4F6032A-AB93-4601-BBBA-4B784152E84D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4F6032A-AB93-4601-BBBA-4B784152E84D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4F6032A-AB93-4601-BBBA-4B784152E84D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C14523F-14FD-45C3-99E4-9B5B8157B720}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C14523F-14FD-45C3-99E4-9B5B8157B720}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C14523F-14FD-45C3-99E4-9B5B8157B720}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C14523F-14FD-45C3-99E4-9B5B8157B720}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37D2850B-9377-48D7-AE49-818EE6A3EBE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37D2850B-9377-48D7-AE49-818EE6A3EBE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37D2850B-9377-48D7-AE49-818EE6A3EBE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37D2850B-9377-48D7-AE49-818EE6A3EBE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EE7C4ED-EC99-4821-A280-B72D58C9EA6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EE7C4ED-EC99-4821-A280-B72D58C9EA6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EE7C4ED-EC99-4821-A280-B72D58C9EA6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EE7C4ED-EC99-4821-A280-B72D58C9EA6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1D8F39A-57D7-4996-B3FA-D3CB42E99AC6}.Debug|Any CPU.ActiveCfg = Debug
+		{F1D8F39A-57D7-4996-B3FA-D3CB42E99AC6}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
