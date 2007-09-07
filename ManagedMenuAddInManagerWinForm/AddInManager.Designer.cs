@@ -46,6 +46,7 @@
             this.AddInList.TabIndex = 0;
             this.AddInList.UseCompatibleStateImageBehavior = false;
             this.AddInList.View = System.Windows.Forms.View.Details;
+            this.AddInList.ItemChecked += new System.Windows.Forms.ItemCheckedEventHandler(this.AddInList_ItemChecked);
             // 
             // AddIns
             // 
@@ -60,6 +61,7 @@
             this.SaveButton.TabIndex = 1;
             this.SaveButton.Text = "&Save";
             this.SaveButton.UseVisualStyleBackColor = true;
+            this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
             // RefreshButton
             // 
