@@ -14,6 +14,7 @@ namespace ManagedMenuAddInManagerWinForm
     {
         private static readonly string EnabledFolder = Environment.CurrentDirectory + @"\" + AddIn.EnabledFolder;
         private static readonly string DisabledFolder = Environment.CurrentDirectory + @"\" + AddIn.DisabledFolder;
+        private static readonly string AddInViewFolder = Environment.CurrentDirectory + @"\AddInViews";
 
         public static List<AddIn> Refresh()
         {
@@ -47,9 +48,31 @@ namespace ManagedMenuAddInManagerWinForm
 
         private static void Initialize()
         {
-            AppDomain.CurrentDomain.ReflectionOnlyAssemblyResolve += new ResolveEventHandler(ReflectionOnlyAssemblyResolve); 
+            AppDomain.CurrentDomain.ReflectionOnlyAssemblyResolve += new ResolveEventHandler(ReflectionOnlyAssemblyResolve);
+            MakeFolder(AddInViewFolder);
             MakeFolder(EnabledFolder);
             MakeFolder(DisabledFolder);
+            LoadAddInViews();
+        }
+
+        /// <summary>
+        /// Loads all assemblies in the folder ..\AddInViews\
+        /// This is a necessary prerequisite to loading the AddIns themselves.
+        /// </summary>
+        private static void LoadAddInViews()
+        {
+            //At first the files in the folder is looped through to find all assemblies
+            DirectoryInfo info = new DirectoryInfo(AddInViewFolder);
+            foreach (FileInfo fileInfo in info.GetFiles("*.dll"))
+            {
+                LoadAddInViewAssembly(fileInfo.FullName);
+            }
+
+            //Then the subdirectories get the same treatment
+            foreach (DirectoryInfo directoryInfo in info.GetDirectories())
+            {
+                LoadAddInViewAssembly(directoryInfo.FullName); 
+            }
         }
 
         static Assembly ReflectionOnlyAssemblyResolve(object sender, ResolveEventArgs args)
@@ -116,13 +139,48 @@ namespace ManagedMenuAddInManagerWinForm
             {
                 Debug.WriteLine("Showing content of ReflectionTypeLoadException and LoaderExceptions:");
                 Debug.WriteLine("");
-                Debug.WriteLine(ex.ToString());
+                WriteException(ex);
                 foreach (Exception lex in ex.LoaderExceptions)
                 {
-                    Debug.WriteLine(lex.ToString());
-                    Debug.WriteLine("");
+                    WriteException(lex);
                 }
             }
+            catch (FileLoadException ex)
+            {
+                Debug.WriteLine("Showing content of FileLoadException:");
+                Debug.WriteLine("");
+                WriteException(ex);
+            }
+        }
+
+        private static void LoadAddInViewAssembly(string fullFileName)
+        {
+            try
+            {
+                Assembly asm = Assembly.ReflectionOnlyLoadFrom(fullFileName);
+            }
+            catch (ReflectionTypeLoadException ex)
+            {
+                Debug.WriteLine("Showing content of ReflectionTypeLoadException and LoaderExceptions:");
+                Debug.WriteLine("");
+                WriteException(ex);
+                foreach (Exception lex in ex.LoaderExceptions)
+                {
+                    WriteException(lex);
+                }
+            }
+            catch (FileLoadException ex)
+            {
+                Debug.WriteLine("Showing content of FileLoadException:");
+                Debug.WriteLine("");
+                WriteException(ex);
+            }
+        }
+
+        [Conditional("DEBUG")]
+        private static void WriteException(Exception ex)
+        {
+            Debug.WriteLine(ex.ToString());
         }
 
         private static void MakeFolder(string folder)

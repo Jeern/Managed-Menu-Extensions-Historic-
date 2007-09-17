@@ -145,7 +145,7 @@ namespace ManagedMenuVS2008
             {
                 CommandBarControl cbc = (CommandBarControl)CommandBarControl;
                 string id = ((CommandBarControl)CommandBarControl).Tag;
-                m_Host.MenuClicked(m_AddedMenus[id].Id, new MenuContext(m_ContextsFromMenus[id]));
+                m_Host.MenuClicked(m_AddedMenus[id].Id, new MenuContext(cbc.DescriptionText, "", m_ContextsFromMenus[id]));
             }
             catch (Exception ex)
             {

@@ -49,10 +49,12 @@
     <ProjectReference Include="..\ManagedMenuAddInViews\ManagedMenuAddInViews.csproj">
       <Project>{72CB31A6-2E61-43E1-91FB-28F4945FAD9B}</Project>
       <Name>ManagedMenuAddInViews</Name>
+      <Private>False</Private>
     </ProjectReference>
     <ProjectReference Include="..\ManagedMenuContracts\ManagedMenuContracts.csproj">
       <Project>{B4F6032A-AB93-4601-BBBA-4B784152E84D}</Project>
       <Name>ManagedMenuContracts</Name>
+      <Private>False</Private>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

@@ -6,7 +6,6 @@ using System.AddIn.Hosting;
 using System.Collections.ObjectModel;
 using System.Windows.Forms;
 using ManagedMenuHostViews;
-using ManagedMenuHost.Properties;
 
 namespace ManagedMenuHost
 {
@@ -80,7 +79,8 @@ namespace ManagedMenuHost
 
         private Collection<AddInToken> GetAddIns()
         {
-            string addInRoot = Settings.Default.BaseDirectory;
+            string addInRoot = AddInProperties.MainDirectory;
+            MessageBox.Show(addInRoot);
             string[] messages = AddInStore.Rebuild(addInRoot);
             WriteMessages(messages);
             return AddInStore.FindAddIns(typeof(MenuManagerHostView), addInRoot);
