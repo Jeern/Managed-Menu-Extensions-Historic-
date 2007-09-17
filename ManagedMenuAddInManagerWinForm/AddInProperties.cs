@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.Win32;
 
-namespace ManagedMenuHost
+namespace ManagedMenuAddInManagerWinForm
 {
     /// <summary>
     /// Class to hold different properties of the AddIn

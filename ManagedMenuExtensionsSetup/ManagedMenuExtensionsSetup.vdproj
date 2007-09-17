@@ -217,6 +217,20 @@
     {
         "CustomAction"
         {
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_12E5B347BDB44174BEAD3EED474BB032"
+            {
+            "Name" = "8:Primary output from AddInManagerWinForm (Active)"
+            "Condition" = "8:"
+            "Object" = "8:_0E5651C9AAAE46699058202C8D732E58"
+            "FileType" = "3:2"
+            "InstallAction" = "3:1"
+            "Arguments" = "8:"
+            "EntryPoint" = "8:"
+            "Sequence" = "3:1"
+            "Identifier" = "8:_8F9573C7_AFBD_4215_B2BF_49CA522DB570"
+            "InstallerClass" = "11:TRUE"
+            "CustomActionData" = "8:"
+            }
         }
         "DefaultFeature"
         {

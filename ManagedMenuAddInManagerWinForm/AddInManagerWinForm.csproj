@@ -35,9 +35,12 @@
     <Reference Include="System.AddIn">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -59,6 +62,13 @@
       <DependentUpon>AddInManager.cs</DependentUpon>
     </Compile>
     <Compile Include="AddInManagerHelper.cs" />
+    <Compile Include="AddInProperties.cs" />
+    <Compile Include="InstallerRegKey.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InstallerRegKey.Designer.cs">
+      <DependentUpon>InstallerRegKey.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AddInManager.resx">
