@@ -56,9 +56,9 @@
     <None Include="jern.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ManagedMenuHostViews\ManagedMenuHostViews.csproj">
+    <ProjectReference Include="..\ManagedMenuHostViews\ManagedMenuHostViewsSigned.csproj">
       <Project>{2EE7C4ED-EC99-4821-A280-B72D58C9EA6F}</Project>
-      <Name>ManagedMenuHostViews</Name>
+      <Name>ManagedMenuHostViewsSigned</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
