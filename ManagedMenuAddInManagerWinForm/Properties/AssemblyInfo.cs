@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("ManagedMenuAddInManagerWinForm")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("KMD")]
-[assembly: AssemblyProduct("ManagedMenuAddInManagerWinForm")]
-[assembly: AssemblyCopyright("Copyright © KMD 2007")]
+[assembly: AssemblyCompany("Jesper Niedermann")]
+[assembly: AssemblyProduct("ManagedMenuExtensions")]
+[assembly: AssemblyCopyright("Copyright © Jesper Niedermann 2007")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
