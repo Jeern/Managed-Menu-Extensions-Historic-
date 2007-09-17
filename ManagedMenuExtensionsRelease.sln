@@ -3,21 +3,29 @@ Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedMenuAddInAdapters", "ManagedMenuAddInAdapters\ManagedMenuAddInAdapters.csproj", "{DE9B952E-53CB-41E3-9D8D-31673642B56D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedMenuAddInViews", "ManagedMenuAddInViews\ManagedMenuAddInViews.csproj", "{72CB31A6-2E61-43E1-91FB-28F4945FAD9B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedMenuAddInViews", "ManagedMenuAddInViews\ManagedMenuAddInViewsSigned.csproj", "{72CB31A6-2E61-43E1-91FB-28F4945FAD9B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedMenuContracts", "ManagedMenuContracts\ManagedMenuContracts.csproj", "{B4F6032A-AB93-4601-BBBA-4B784152E84D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedMenuHost", "ManagedMenuHost\ManagedMenuHost.csproj", "{0C14523F-14FD-45C3-99E4-9B5B8157B720}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedMenuHost", "ManagedMenuHost\ManagedMenuHostSigned.csproj", "{0C14523F-14FD-45C3-99E4-9B5B8157B720}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedMenuHostAdapters", "ManagedMenuHostAdapters\ManagedMenuHostAdapters.csproj", "{37D2850B-9377-48D7-AE49-818EE6A3EBE7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedMenuHostViews", "ManagedMenuHostViews\ManagedMenuHostViews.csproj", "{2EE7C4ED-EC99-4821-A280-B72D58C9EA6F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedMenuHostViews", "ManagedMenuHostViews\ManagedMenuHostViewsSigned.csproj", "{2EE7C4ED-EC99-4821-A280-B72D58C9EA6F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedMenuVS2008", "ManagedMenuVS2008\ManagedMenuVS2008.csproj", "{B7590312-1AAD-4D7A-9B3E-70444B463DCA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedMenuAddInSample1", "ManagedMenuAddInSample1\ManagedMenuAddInSample1.csproj", "{3DB999F5-2162-4056-BC68-E06228FF8B9F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedMenuAddInSample2", "ManagedMenuAddInSample2\ManagedMenuAddInSample2.csproj", "{C15D1F83-3468-4398-A33F-0B4F00A325CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddInManagerWinForm", "ManagedMenuAddInManagerWinForm\AddInManagerWinForm.csproj", "{0846235E-C888-4C90-B958-F5BE24385ED4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{984FAC14-24E2-4EB8-A233-0DA394E117EE}"
+	ProjectSection(SolutionItems) = preProject
+		Lib\jern.pfx = Lib\jern.pfx
+		Lib\readme.txt = Lib\readme.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +69,10 @@ Global
 		{C15D1F83-3468-4398-A33F-0B4F00A325CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C15D1F83-3468-4398-A33F-0B4F00A325CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C15D1F83-3468-4398-A33F-0B4F00A325CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0846235E-C888-4C90-B958-F5BE24385ED4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0846235E-C888-4C90-B958-F5BE24385ED4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0846235E-C888-4C90-B958-F5BE24385ED4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0846235E-C888-4C90-B958-F5BE24385ED4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -80,7 +80,6 @@ namespace ManagedMenuHost
         private Collection<AddInToken> GetAddIns()
         {
             string addInRoot = AddInProperties.MainDirectory;
-            MessageBox.Show(addInRoot);
             string[] messages = AddInStore.Rebuild(addInRoot);
             WriteMessages(messages);
             return AddInStore.FindAddIns(typeof(MenuManagerHostView), addInRoot);
