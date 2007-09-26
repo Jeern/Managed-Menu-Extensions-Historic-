@@ -4,23 +4,22 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.20706</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{DE9B952E-53CB-41E3-9D8D-31673642B56D}</ProjectGuid>
+    <ProjectGuid>{3DB999F5-2162-4056-BC68-E06228FF8B9F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ManagedMenuAddInAdapters</RootNamespace>
-    <AssemblyName>ManagedMenuAddInAdapters</AssemblyName>
+    <RootNamespace>ManagedMenuAddInSample1</RootNamespace>
+    <AssemblyName>ManagedMenuAddInSample1</AssemblyName>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>2.0</OldToolsVersion>
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\output\AddInSideAdapters\</OutputPath>
+    <OutputPath>..\output\AddIns\ManagedMenuAddInSample1\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -28,7 +27,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\output\AddInSideAdapters\</OutputPath>
+    <OutputPath>..\output\AddIns\ManagedMenuAddInSample1\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -37,23 +36,17 @@
     <Reference Include="System" />
     <Reference Include="System.AddIn, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />
     <Reference Include="System.AddIn.Contract, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MenuContextContractToView.cs" />
-    <Compile Include="MenuItemContractToView.cs" />
-    <Compile Include="MenuItemViewToContract.cs" />
-    <Compile Include="MenuManagerContractToView.cs" />
+    <Compile Include="MenuItem.cs" />
+    <Compile Include="MenuManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ManagedMenuAddInViews\ManagedMenuAddInViews.csproj">
+    <ProjectReference Include="..\ManagedMenuAddInViews\ManagedMenuAddInViewsRelease.csproj">
       <Project>{72CB31A6-2E61-43E1-91FB-28F4945FAD9B}</Project>
-      <Name>ManagedMenuAddInViews</Name>
-      <Private>False</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\ManagedMenuContracts\ManagedMenuContracts.csproj">
-      <Project>{B4F6032A-AB93-4601-BBBA-4B784152E84D}</Project>
-      <Name>ManagedMenuContracts</Name>
+      <Name>ManagedMenuAddInViewsRelease</Name>
       <Private>False</Private>
     </ProjectReference>
   </ItemGroup>

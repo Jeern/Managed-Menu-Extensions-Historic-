@@ -4,24 +4,22 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.20706</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{0C14523F-14FD-45C3-99E4-9B5B8157B720}</ProjectGuid>
+    <ProjectGuid>{C15D1F83-3468-4398-A33F-0B4F00A325CA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ManagedMenuHost</RootNamespace>
-    <AssemblyName>ManagedMenuHost</AssemblyName>
+    <RootNamespace>ManagedMenuAddInSample2</RootNamespace>
+    <AssemblyName>ManagedMenuAddInSample2</AssemblyName>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>2.0</OldToolsVersion>
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
-    <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>jern.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\output\</OutputPath>
+    <OutputPath>..\output\AddIns\ManagedMenuAddInSample2\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -29,7 +27,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\output\</OutputPath>
+    <OutputPath>..\output\AddIns\ManagedMenuAddInSample2\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -38,27 +36,18 @@
     <Reference Include="System" />
     <Reference Include="System.AddIn, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />
     <Reference Include="System.AddIn.Contract, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Management" />
     <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddInProperties.cs" />
-    <Compile Include="MenuContext.cs" />
     <Compile Include="MenuItem.cs" />
-    <Compile Include="MenuTree.cs" />
-    <Compile Include="MenuTreeNode.cs" />
-    <Compile Include="MMHost.cs" />
+    <Compile Include="MenuManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="jern.pfx" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ManagedMenuHostViews\ManagedMenuHostViewsSigned.csproj">
-      <Project>{2EE7C4ED-EC99-4821-A280-B72D58C9EA6F}</Project>
-      <Name>ManagedMenuHostViewsSigned</Name>
+    <ProjectReference Include="..\ManagedMenuAddInViews\ManagedMenuAddInViewsRelease.csproj">
+      <Project>{72CB31A6-2E61-43E1-91FB-28F4945FAD9B}</Project>
+      <Name>ManagedMenuAddInViewsRelease</Name>
+      <Private>False</Private>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

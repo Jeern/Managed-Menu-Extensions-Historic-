@@ -46,9 +46,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ManagedMenuAddInViews\ManagedMenuAddInViews.csproj">
+    <ProjectReference Include="..\ManagedMenuAddInViews\ManagedMenuAddInViewsRelease.csproj">
       <Project>{72CB31A6-2E61-43E1-91FB-28F4945FAD9B}</Project>
-      <Name>ManagedMenuAddInViews</Name>
+      <Name>ManagedMenuAddInViewsRelease</Name>
       <Private>False</Private>
     </ProjectReference>
     <ProjectReference Include="..\ManagedMenuContracts\ManagedMenuContracts.csproj">

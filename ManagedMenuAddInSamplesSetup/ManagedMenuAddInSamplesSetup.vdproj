@@ -13,6 +13,48 @@
 "SccProvider" = "8:"
     "Hierarchy"
     {
+        "Entry"
+        {
+        "MsmKey" = "8:_2E2E227E5AAF4E7A93EE1CD2547CC619"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_683013EE7871455C6546D5ABB0C777AE"
+        "OwnerKey" = "8:_2E2E227E5AAF4E7A93EE1CD2547CC619"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_683013EE7871455C6546D5ABB0C777AE"
+        "OwnerKey" = "8:_CFBB10F480C042E18E857ED799EA04C1"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_CFBB10F480C042E18E857ED799EA04C1"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_2E2E227E5AAF4E7A93EE1CD2547CC619"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_CFBB10F480C042E18E857ED799EA04C1"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_683013EE7871455C6546D5ABB0C777AE"
+        "MsmSig" = "8:_UNDEFINED"
+        }
     }
     "Configurations"
     {
@@ -86,10 +128,49 @@
         {
             "LaunchCondition"
             {
+                "{A06ECF26-33A3-4562-8140-9B0E340D4F24}:_6403C3524CC64486A77E2AD3F1104FAF"
+                {
+                "Name" = "8:.NET Framework"
+                "Message" = "8:[VSDNETMSG]"
+                "Version" = "8:3.5.20706"
+                "AllowLaterVersions" = "11:FALSE"
+                "InstallUrl" = "8:http://go.microsoft.com/fwlink/?LinkId=76617"
+                }
             }
         }
         "File"
         {
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_683013EE7871455C6546D5ABB0C777AE"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:ManagedMenuAddInViews, Version=1.0.0.0, Culture=neutral, PublicKeyToken=fb039b3d26e2ca59, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_683013EE7871455C6546D5ABB0C777AE"
+                    {
+                    "Name" = "8:ManagedMenuAddInViews.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:ManagedMenuAddInViews.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_239744EFC54442AFB6D768AEA2E4C30C"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:TRUE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
         }
         "FileType"
         {
@@ -120,7 +201,7 @@
             }
             "{3C67513D-01DD-4637-8A68-80971EB9504F}:_E28AD5B9283547DABAFA271E3775C60F"
             {
-            "DefaultLocation" = "8:[ProgramFilesFolder][Manufacturer]\\[ProductName]"
+            "DefaultLocation" = "8:[MAINADDINPATH]"
             "Name" = "8:#1925"
             "AlwaysCreate" = "11:FALSE"
             "Condition" = "8:"
@@ -128,6 +209,50 @@
             "Property" = "8:TARGETDIR"
                 "Folders"
                 {
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_239744EFC54442AFB6D768AEA2E4C30C"
+                    {
+                    "Name" = "8:AddIns"
+                    "AlwaysCreate" = "11:FALSE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_6D9DDD00049C4248B14D67F11E9E3C6D"
+                        "Folders"
+                        {
+                            "{9EF0B969-E518-4E46-987F-47570745A589}:_4FC61D02E9664B46B7FDC9C0437B2399"
+                            {
+                            "Name" = "8:Sample1"
+                            "AlwaysCreate" = "11:FALSE"
+                            "Condition" = "8:"
+                            "Transitive" = "11:FALSE"
+                            "Property" = "8:_F4053FEF31154F1F8375589AFEE0B15B"
+                                "Folders"
+                                {
+                                }
+                            }
+                        }
+                    }
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_A46C9E7D0E3D441CA6D877B6692BD7FC"
+                    {
+                    "Name" = "8:AddInsDisabled"
+                    "AlwaysCreate" = "11:FALSE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_999F1AC1077D4EC890DB131080CBFAA7"
+                        "Folders"
+                        {
+                            "{9EF0B969-E518-4E46-987F-47570745A589}:_96958926CDD34129B75D32EF594E862C"
+                            {
+                            "Name" = "8:Sample2"
+                            "AlwaysCreate" = "11:FALSE"
+                            "Condition" = "8:"
+                            "Transitive" = "11:FALSE"
+                            "Property" = "8:_B06E468F7A3E438CA223E3578E6A461F"
+                                "Folders"
+                                {
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -136,6 +261,14 @@
         }
         "Locator"
         {
+            "{CF66B7F7-B7DA-4B08-A67A-233430638C9C}:_097B9A7B1E8F4C9D893B22824C2B1179"
+            {
+            "Name" = "8:SearchMainAddInPath"
+            "Root" = "2:1"
+            "RegKey" = "8:Software\\Jern\\ManagedMenuExtensions"
+            "Value" = "8:AddInMainDirectory"
+            "Property" = "8:MAINADDINPATH"
+            }
         }
         "MsiBootstrapper"
         {
@@ -145,9 +278,9 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:ManagedMenuAddInSamplesSetup"
+        "ProductName" = "8:Managed Menu AddIn-Samples"
         "ProductCode" = "8:{61DD1B04-691C-4D61-9F15-A338A6296462}"
-        "PackageCode" = "8:{BB630164-9EC8-47C5-A129-5482CCE8F30D}"
+        "PackageCode" = "8:{8C3BFA12-2731-4CE1-8F4A-1BFDAA655C61}"
         "UpgradeCode" = "8:{BD00DF43-2DEC-4B93-B988-81E560E29FE2}"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
@@ -187,20 +320,6 @@
                     "Transitive" = "11:FALSE"
                         "Keys"
                         {
-                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_E09C2904668649139A97CD69FE100D55"
-                            {
-                            "Name" = "8:[Manufacturer]"
-                            "Condition" = "8:"
-                            "AlwaysCreate" = "11:FALSE"
-                            "DeleteAtUninstall" = "11:FALSE"
-                            "Transitive" = "11:FALSE"
-                                "Keys"
-                                {
-                                }
-                                "Values"
-                                {
-                                }
-                            }
                         }
                         "Values"
                         {
@@ -665,6 +784,62 @@
         }
         "ProjectOutput"
         {
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_2E2E227E5AAF4E7A93EE1CD2547CC619"
+            {
+            "SourcePath" = "8:..\\ManagedMenuAddInSample1\\obj\\Release\\ManagedMenuAddInSample1.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_4FC61D02E9664B46B7FDC9C0437B2399"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:1"
+            "OutputConfiguration" = "8:"
+            "OutputGroupCanonicalName" = "8:Built"
+            "OutputProjectGuid" = "8:{3DB999F5-2162-4056-BC68-E06228FF8B9F}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_CFBB10F480C042E18E857ED799EA04C1"
+            {
+            "SourcePath" = "8:..\\ManagedMenuAddInSample2\\obj\\Release\\ManagedMenuAddInSample2.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_96958926CDD34129B75D32EF594E862C"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:1"
+            "OutputConfiguration" = "8:"
+            "OutputGroupCanonicalName" = "8:Built"
+            "OutputProjectGuid" = "8:{C15D1F83-3468-4398-A33F-0B4F00A325CA}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
         }
     }
 }

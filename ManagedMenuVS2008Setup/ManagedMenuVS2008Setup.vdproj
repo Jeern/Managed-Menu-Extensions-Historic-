@@ -86,6 +86,14 @@
         {
             "LaunchCondition"
             {
+                "{A06ECF26-33A3-4562-8140-9B0E340D4F24}:_1DF132E593684C9387D697E67CA5C0E2"
+                {
+                "Name" = "8:.NET Framework"
+                "Message" = "8:[VSDNETMSG]"
+                "Version" = "8:3.5.20706"
+                "AllowLaterVersions" = "11:FALSE"
+                "InstallUrl" = "8:http://go.microsoft.com/fwlink/?LinkId=76617"
+                }
             }
         }
         "File"
@@ -145,7 +153,7 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:ManagedMenuVS2008Setup"
+        "ProductName" = "8:Managed Menu Ext Helper VS2008"
         "ProductCode" = "8:{456C42E3-17F2-4BE3-BC1D-4D6D89415624}"
         "PackageCode" = "8:{E630011D-63C7-444D-8EAA-1AA43047F0E0}"
         "UpgradeCode" = "8:{92C78C6E-B9D6-4833-9B00-EC0CCD9EB6CC}"

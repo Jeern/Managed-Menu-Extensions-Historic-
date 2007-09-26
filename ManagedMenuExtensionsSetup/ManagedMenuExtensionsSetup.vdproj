@@ -33,6 +33,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_31734A21871440BB88904293E33D0DEB"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_4F6475FD685C451F994E72B6AB7D3358"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -119,6 +125,12 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_4F6475FD685C451F994E72B6AB7D3358"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_31734A21871440BB88904293E33D0DEB"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -217,20 +229,6 @@
     {
         "CustomAction"
         {
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_12E5B347BDB44174BEAD3EED474BB032"
-            {
-            "Name" = "8:Primary output from AddInManagerWinForm (Active)"
-            "Condition" = "8:"
-            "Object" = "8:_0E5651C9AAAE46699058202C8D732E58"
-            "FileType" = "3:2"
-            "InstallAction" = "3:1"
-            "Arguments" = "8:"
-            "EntryPoint" = "8:"
-            "Sequence" = "3:1"
-            "Identifier" = "8:_8F9573C7_AFBD_4215_B2BF_49CA522DB570"
-            "InstallerClass" = "11:TRUE"
-            "CustomActionData" = "8:"
-            }
         }
         "DefaultFeature"
         {
@@ -281,7 +279,7 @@
             "SharedLegacy" = "11:FALSE"
             "PackageAs" = "3:1"
             "Register" = "3:1"
-            "Exclude" = "11:FALSE"
+            "Exclude" = "11:TRUE"
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
@@ -312,7 +310,7 @@
             "SharedLegacy" = "11:FALSE"
             "PackageAs" = "3:1"
             "Register" = "3:1"
-            "Exclude" = "11:FALSE"
+            "Exclude" = "11:TRUE"
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
@@ -343,7 +341,7 @@
             "SharedLegacy" = "11:FALSE"
             "PackageAs" = "3:1"
             "Register" = "3:1"
-            "Exclude" = "11:FALSE"
+            "Exclude" = "11:TRUE"
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
@@ -388,7 +386,7 @@
             }
             "{3C67513D-01DD-4637-8A68-80971EB9504F}:_EB16EFDAD31347B1B81B0C7DD15A53E7"
             {
-            "DefaultLocation" = "8:[MAINADDINPATH]"
+            "DefaultLocation" = "8:[ProgramFilesFolder][Manufacturer]\\[ProductName]"
             "Name" = "8:#1925"
             "AlwaysCreate" = "11:TRUE"
             "Condition" = "8:"
@@ -487,9 +485,9 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:ManagedMenuExtensionsSetup"
+        "ProductName" = "8:Managed Menu Extensions"
         "ProductCode" = "8:{71187486-43B8-44C5-8DA3-31C3A431165C}"
-        "PackageCode" = "8:{2646CBC4-F47C-44A1-B021-8A159C005430}"
+        "PackageCode" = "8:{2E53AC75-BBB2-4716-A6AA-CF088C276F4B}"
         "UpgradeCode" = "8:{8C44E4EF-A959-43E6-A99C-804D87D6EEA1}"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
@@ -499,7 +497,7 @@
         "Manufacturer" = "8:Jern"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
-        "Title" = "8:ManagedMenuExtensionsSetup"
+        "Title" = "8:Managed Menu Extensions"
         "Subject" = "8:"
         "ARPCONTACT" = "8:Jesper Niedermann"
         "Keywords" = "8:"
@@ -630,6 +628,34 @@
         }
         "Shortcut"
         {
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_A1CE80FD6DF240659DB9DBD9A3BF6AC5"
+            {
+            "Name" = "8:Add-In Manager"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:TRUE"
+            "Target" = "8:_0E5651C9AAAE46699058202C8D732E58"
+            "Folder" = "8:_94D03B5F7A83486F8D287A7984343AC6"
+            "WorkingFolder" = "8:_EB16EFDAD31347B1B81B0C7DD15A53E7"
+            "Icon" = "8:"
+            "Feature" = "8:"
+            }
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_E48C0C5B2F2A4BDBB8B77266CB1F046D"
+            {
+            "Name" = "8:Add-In Manager"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:TRUE"
+            "Target" = "8:_0E5651C9AAAE46699058202C8D732E58"
+            "Folder" = "8:_4D41187944A943A8949D25B75012E30A"
+            "WorkingFolder" = "8:_EB16EFDAD31347B1B81B0C7DD15A53E7"
+            "Icon" = "8:"
+            "Feature" = "8:"
+            }
         }
         "UserInterface"
         {
@@ -746,7 +772,7 @@
                     }
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_65EC917BDD674AE39550D6E773F9A67A"
                     {
-                    "Sequence" = "3:300"
+                    "Sequence" = "3:200"
                     "DisplayName" = "8:Installation Folder"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
@@ -781,7 +807,7 @@
                     }
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_C146353A01C942449110CBCA5C43BED3"
                     {
-                    "Sequence" = "3:400"
+                    "Sequence" = "3:300"
                     "DisplayName" = "8:Confirm Installation"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
@@ -1108,6 +1134,34 @@
             "OutputConfiguration" = "8:"
             "OutputGroupCanonicalName" = "8:Built"
             "OutputProjectGuid" = "8:{37D2850B-9377-48D7-AE49-818EE6A3EBE7}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_31734A21871440BB88904293E33D0DEB"
+            {
+            "SourcePath" = "8:..\\ManagedMenuAddInViews\\obj\\Release\\ManagedMenuAddInViews.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_6A2B7EF05184463BA583AB83700D3498"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:1"
+            "OutputConfiguration" = "8:"
+            "OutputGroupCanonicalName" = "8:Built"
+            "OutputProjectGuid" = "8:{72CB31A6-2E61-43E1-91FB-28F4945FAD9B}"
             "ShowKeyOutput" = "11:TRUE"
                 "ExcludeFilters"
                 {
