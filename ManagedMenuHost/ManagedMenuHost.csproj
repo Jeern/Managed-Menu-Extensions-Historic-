@@ -57,6 +57,7 @@
     <ProjectReference Include="..\ManagedMenuHostViews\ManagedMenuHostViews.csproj">
       <Project>{2EE7C4ED-EC99-4821-A280-B72D58C9EA6F}</Project>
       <Name>ManagedMenuHostViews</Name>
+      <Private>False</Private>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

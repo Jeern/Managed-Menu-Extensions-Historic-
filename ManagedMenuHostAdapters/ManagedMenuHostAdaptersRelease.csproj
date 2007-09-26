@@ -4,23 +4,22 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.20706</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{DE9B952E-53CB-41E3-9D8D-31673642B56D}</ProjectGuid>
+    <ProjectGuid>{37D2850B-9377-48D7-AE49-818EE6A3EBE7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ManagedMenuAddInAdapters</RootNamespace>
-    <AssemblyName>ManagedMenuAddInAdapters</AssemblyName>
+    <RootNamespace>ManagedMenuHostAdapters</RootNamespace>
+    <AssemblyName>ManagedMenuHostAdapters</AssemblyName>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>2.0</OldToolsVersion>
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\output\AddInSideAdapters\</OutputPath>
+    <OutputPath>..\output\HostSideAdapters\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -28,7 +27,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\output\AddInSideAdapters\</OutputPath>
+    <OutputPath>..\output\HostSideAdapters\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -39,21 +38,21 @@
     <Reference Include="System.AddIn.Contract, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MenuContextContractToView.cs" />
+    <Compile Include="MenuContextViewToContract.cs" />
     <Compile Include="MenuItemContractToView.cs" />
     <Compile Include="MenuItemViewToContract.cs" />
-    <Compile Include="MenuManagerContractToView.cs" />
+    <Compile Include="MenuManagerViewToContract.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ManagedMenuAddInViews\ManagedMenuAddInViews.csproj">
-      <Project>{72CB31A6-2E61-43E1-91FB-28F4945FAD9B}</Project>
-      <Name>ManagedMenuAddInViews</Name>
-      <Private>False</Private>
-    </ProjectReference>
     <ProjectReference Include="..\ManagedMenuContracts\ManagedMenuContracts.csproj">
       <Project>{B4F6032A-AB93-4601-BBBA-4B784152E84D}</Project>
       <Name>ManagedMenuContracts</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\ManagedMenuHostViews\ManagedMenuHostViewsRelease.csproj">
+      <Project>{2EE7C4ED-EC99-4821-A280-B72D58C9EA6F}</Project>
+      <Name>ManagedMenuHostViewsRelease</Name>
       <Private>False</Private>
     </ProjectReference>
   </ItemGroup>
