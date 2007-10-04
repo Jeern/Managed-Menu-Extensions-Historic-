@@ -30,7 +30,6 @@ namespace ManagedMenuAddInManagerWinForm
         private void SaveButton_Click(object sender, EventArgs e)
         {
             SaveList();
-//            RefreshList();
         }
 
         private void RefreshList()

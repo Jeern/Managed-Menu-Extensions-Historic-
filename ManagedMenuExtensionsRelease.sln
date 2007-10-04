@@ -24,7 +24,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{984FAC14-24E2-4EB8-A233-0DA394E117EE}"
 	ProjectSection(SolutionItems) = preProject
 		Lib\jern.pfx = Lib\jern.pfx
-		Lib\readme.txt = Lib\readme.txt
 	EndProjectSection
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ManagedMenuExtensionsSetup", "ManagedMenuExtensionsSetup\ManagedMenuExtensionsSetup.vdproj", "{1119DF67-846C-4375-AE3E-489F733C25C6}"
@@ -33,7 +32,33 @@ Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ManagedMenuVS2008Setup", "M
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ManagedMenuAddInSamplesSetup", "ManagedMenuAddInSamplesSetup\ManagedMenuAddInSamplesSetup.vdproj", "{9B8E02FD-087F-476F-A04A-5C6E8A874C21}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedMenuVS2008Installer", "ManagedMenuVS2008Installer\ManagedMenuVS2008Installer.csproj", "{73E0DE3F-BA76-47B5-BDDF-60DCE8736A0C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{F4C9A7B9-D566-4A52-BBD9-E42AAD0043EF}"
+	ProjectSection(SolutionItems) = preProject
+		Lib\Documents\readme.txt = Lib\Documents\readme.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{58D905EB-B2A4-43BD-918A-5FE7F2899AA8}"
+	ProjectSection(SolutionItems) = preProject
+		Lib\Images\MMEGear.ico = Lib\Images\MMEGear.ico
+		Lib\Images\MMEGear.jpg = Lib\Images\MMEGear.jpg
+		Lib\Images\MMEGear16.ico = Lib\Images\MMEGear16.ico
+		Lib\Images\MMEGear24.ico = Lib\Images\MMEGear24.ico
+		Lib\Images\MMEGear32.ico = Lib\Images\MMEGear32.ico
+		Lib\Images\MMEGear48.ico = Lib\Images\MMEGear48.ico
+		Lib\Images\MMEGear64.ico = Lib\Images\MMEGear64.ico
+		Lib\Images\MMEL.jpg = Lib\Images\MMEL.jpg
+		Lib\Images\MMES.jpg = Lib\Images\MMES.jpg
+		Lib\Images\MMESS.ico = Lib\Images\MMESS.ico
+		Lib\Images\MMESS.jpg = Lib\Images\MMESS.jpg
+		Lib\Images\MMESS16.ico = Lib\Images\MMESS16.ico
+		Lib\Images\MMESS24.ico = Lib\Images\MMESS24.ico
+		Lib\Images\MMESS32.ico = Lib\Images\MMESS32.ico
+		Lib\Images\MMESS48.ico = Lib\Images\MMESS48.ico
+		Lib\Images\MMESS64.ico = Lib\Images\MMESS64.ico
+		Lib\Images\MMExtArchitecture.JPG = Lib\Images\MMExtArchitecture.JPG
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedMenuAddInSamplesInstaller", "ManagedMenuAddInSamplesInstaller\ManagedMenuAddInSamplesInstaller.csproj", "{B548B932-080F-480B-8AEA-290D108F68FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -86,15 +111,20 @@ Global
 		{1119DF67-846C-4375-AE3E-489F733C25C6}.Release|Any CPU.Build.0 = Release
 		{4EBC4DC2-5B01-4893-8AAD-8E2E40C7C435}.Debug|Any CPU.ActiveCfg = Debug
 		{4EBC4DC2-5B01-4893-8AAD-8E2E40C7C435}.Release|Any CPU.ActiveCfg = Release
+		{4EBC4DC2-5B01-4893-8AAD-8E2E40C7C435}.Release|Any CPU.Build.0 = Release
 		{9B8E02FD-087F-476F-A04A-5C6E8A874C21}.Debug|Any CPU.ActiveCfg = Debug
 		{9B8E02FD-087F-476F-A04A-5C6E8A874C21}.Release|Any CPU.ActiveCfg = Release
 		{9B8E02FD-087F-476F-A04A-5C6E8A874C21}.Release|Any CPU.Build.0 = Release
-		{73E0DE3F-BA76-47B5-BDDF-60DCE8736A0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{73E0DE3F-BA76-47B5-BDDF-60DCE8736A0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{73E0DE3F-BA76-47B5-BDDF-60DCE8736A0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{73E0DE3F-BA76-47B5-BDDF-60DCE8736A0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B548B932-080F-480B-8AEA-290D108F68FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B548B932-080F-480B-8AEA-290D108F68FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B548B932-080F-480B-8AEA-290D108F68FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B548B932-080F-480B-8AEA-290D108F68FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F4C9A7B9-D566-4A52-BBD9-E42AAD0043EF} = {984FAC14-24E2-4EB8-A233-0DA394E117EE}
+		{58D905EB-B2A4-43BD-918A-5FE7F2899AA8} = {984FAC14-24E2-4EB8-A233-0DA394E117EE}
 	EndGlobalSection
 EndGlobal
