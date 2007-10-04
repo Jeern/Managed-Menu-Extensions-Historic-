@@ -13,7 +13,7 @@ namespace ManagedMenuAddInSample1
     /// in VS2008, but on all levels of the Solution Explorer.
     /// Both Menus displays "Hardy Rocks" in a MessageBox if clicked.
     /// </summary>
-    [AddIn("ManagedMenuAddInSample1", Version = "1.0.0.0")]
+    [AddIn("ManagedMenuAddInSample1", Version = "0.1.1.0")]
     public class MenuManager : MenuManagerAddInView 
     {
         public override List<MenuItemView> CreateMenus(MenuContextView context)

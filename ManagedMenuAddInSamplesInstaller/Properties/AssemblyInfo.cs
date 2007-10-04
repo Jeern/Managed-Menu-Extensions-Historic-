@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ManagedMenuVS2008Installer")]
+[assembly: AssemblyTitle("ManagedMenuAddInSamplesInstaller")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("KMD")]
-[assembly: AssemblyProduct("ManagedMenuVS2008Installer")]
-[assembly: AssemblyCopyright("Copyright © KMD 2007")]
+[assembly: AssemblyCompany("Jern")]
+[assembly: AssemblyProduct("ManagedMenuExtensions")]
+[assembly: AssemblyCopyright("Copyright © Jesper Niedermann 2007")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("809084b1-fee8-4351-b0e2-2594fb62f9bc")]
+[assembly: Guid("e9f71cae-bb41-46b7-96aa-1afcc486be66")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -31,6 +31,5 @@ using System.Runtime.InteropServices;
 //
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
-// [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("0.1.1.0")]
+[assembly: AssemblyFileVersion("0.1.1.0")]

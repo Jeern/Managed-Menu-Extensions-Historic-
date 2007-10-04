@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddInManager));
             this.AddInList = new System.Windows.Forms.ListView();
             this.AddIns = new System.Windows.Forms.ColumnHeader();
             this.SaveButton = new System.Windows.Forms.Button();
-            this.RefreshButton = new System.Windows.Forms.Button();
             this.ExitButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -55,23 +55,13 @@
             // 
             // SaveButton
             // 
-            this.SaveButton.Location = new System.Drawing.Point(43, 184);
+            this.SaveButton.Location = new System.Drawing.Point(124, 184);
             this.SaveButton.Name = "SaveButton";
             this.SaveButton.Size = new System.Drawing.Size(75, 23);
             this.SaveButton.TabIndex = 1;
             this.SaveButton.Text = "&Save";
             this.SaveButton.UseVisualStyleBackColor = true;
             this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
-            // 
-            // RefreshButton
-            // 
-            this.RefreshButton.Location = new System.Drawing.Point(124, 184);
-            this.RefreshButton.Name = "RefreshButton";
-            this.RefreshButton.Size = new System.Drawing.Size(75, 23);
-            this.RefreshButton.TabIndex = 2;
-            this.RefreshButton.Text = "&Refresh";
-            this.RefreshButton.UseVisualStyleBackColor = true;
-            this.RefreshButton.Click += new System.EventHandler(this.RefreshButton_Click);
             // 
             // ExitButton
             // 
@@ -86,15 +76,14 @@
             // 
             // AddInManager
             // 
-            this.AcceptButton = this.RefreshButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.ExitButton;
             this.ClientSize = new System.Drawing.Size(292, 217);
             this.Controls.Add(this.ExitButton);
-            this.Controls.Add(this.RefreshButton);
             this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.AddInList);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AddInManager";
             this.Text = "AddIn Manager";
             this.ResumeLayout(false);
@@ -105,7 +94,6 @@
 
         private System.Windows.Forms.ListView AddInList;
         private System.Windows.Forms.Button SaveButton;
-        private System.Windows.Forms.Button RefreshButton;
         private System.Windows.Forms.Button ExitButton;
         private System.Windows.Forms.ColumnHeader AddIns;
     }

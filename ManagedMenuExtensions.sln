@@ -22,8 +22,31 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddInManagerWinForm", "ManagedMenuAddInManagerWinForm\AddInManagerWinForm.csproj", "{0846235E-C888-4C90-B958-F5BE24385ED4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{984FAC14-24E2-4EB8-A233-0DA394E117EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{65A06FF7-F1EA-4727-9DCD-5E650657A77A}"
 	ProjectSection(SolutionItems) = preProject
-		Lib\readme.txt = Lib\readme.txt
+		Lib\Documents\readme.txt = Lib\Documents\readme.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{0F6F0781-61BA-49D1-8C98-7F8C6203779D}"
+	ProjectSection(SolutionItems) = preProject
+		Lib\Images\MMEGear.ico = Lib\Images\MMEGear.ico
+		Lib\Images\MMEGear.jpg = Lib\Images\MMEGear.jpg
+		Lib\Images\MMEGear16.ico = Lib\Images\MMEGear16.ico
+		Lib\Images\MMEGear24.ico = Lib\Images\MMEGear24.ico
+		Lib\Images\MMEGear32.ico = Lib\Images\MMEGear32.ico
+		Lib\Images\MMEGear48.ico = Lib\Images\MMEGear48.ico
+		Lib\Images\MMEGear64.ico = Lib\Images\MMEGear64.ico
+		Lib\Images\MMEL.jpg = Lib\Images\MMEL.jpg
+		Lib\Images\MMES.jpg = Lib\Images\MMES.jpg
+		Lib\Images\MMESS.ico = Lib\Images\MMESS.ico
+		Lib\Images\MMESS.jpg = Lib\Images\MMESS.jpg
+		Lib\Images\MMESS16.ico = Lib\Images\MMESS16.ico
+		Lib\Images\MMESS24.ico = Lib\Images\MMESS24.ico
+		Lib\Images\MMESS32.ico = Lib\Images\MMESS32.ico
+		Lib\Images\MMESS48.ico = Lib\Images\MMESS48.ico
+		Lib\Images\MMESS64.ico = Lib\Images\MMESS64.ico
+		Lib\Images\MMExtArchitecture.JPG = Lib\Images\MMExtArchitecture.JPG
 	EndProjectSection
 EndProject
 Global
@@ -75,5 +98,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{65A06FF7-F1EA-4727-9DCD-5E650657A77A} = {984FAC14-24E2-4EB8-A233-0DA394E117EE}
+		{0F6F0781-61BA-49D1-8C98-7F8C6203779D} = {984FAC14-24E2-4EB8-A233-0DA394E117EE}
 	EndGlobalSection
 EndGlobal

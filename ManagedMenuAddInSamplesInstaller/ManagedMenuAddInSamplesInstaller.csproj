@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.20706</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{73E0DE3F-BA76-47B5-BDDF-60DCE8736A0C}</ProjectGuid>
+    <ProjectGuid>{B548B932-080F-480B-8AEA-290D108F68FE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ManagedMenuVS2008Installer</RootNamespace>
-    <AssemblyName>ManagedMenuVS2008Installer</AssemblyName>
+    <RootNamespace>ManagedMenuAddInSamplesInstaller</RootNamespace>
+    <AssemblyName>ManagedMenuAddInSamplesInstaller</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -36,7 +36,6 @@
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
-    <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -47,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InstallerRemoveFolders.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InstallerRemoveFolders.Designer.cs">
+      <DependentUpon>InstallerRemoveFolders.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

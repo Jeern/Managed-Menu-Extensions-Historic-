@@ -81,6 +81,18 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_A08C63D4198B429B81968DC174F8F1E9"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_C693C2999B5349359BA6BACB62B75903"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_CDC180134CA1C5889D6C56779C8114F5"
         "OwnerKey" = "8:_1A28650A033F4DBAA4978412FDB1574E"
         "MsmSig" = "8:_UNDEFINED"
@@ -89,6 +101,18 @@
         {
         "MsmKey" = "8:_CDC180134CA1C5889D6C56779C8114F5"
         "OwnerKey" = "8:_4F6475FD685C451F994E72B6AB7D3358"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_E34CCBBE544D4F7785CB21C6E3A91068"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_F815F6631E664C1BAD5195F781747799"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -256,7 +280,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ManagedMenuAddInViews, Version=1.0.0.0, Culture=neutral, PublicKeyToken=fb039b3d26e2ca59, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:ManagedMenuAddInViews, Version=0.1.1.0, Culture=neutral, PublicKeyToken=fb039b3d26e2ca59, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
                     "_5F36C381F379D50BD77A03D9980C44AC"
@@ -287,7 +311,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ManagedMenuContracts, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:ManagedMenuContracts, Version=0.1.1.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
                     "_9C06C35A0E8B639D3DEE353B564327AD"
@@ -314,11 +338,51 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_A08C63D4198B429B81968DC174F8F1E9"
+            {
+            "SourcePath" = "8:..\\Lib\\Images\\MMEGear.ico"
+            "TargetName" = "8:MMEGear.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_EB16EFDAD31347B1B81B0C7DD15A53E7"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:TRUE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C693C2999B5349359BA6BACB62B75903"
+            {
+            "SourcePath" = "8:..\\Lib\\Images\\MMESS.ico"
+            "TargetName" = "8:MMESS.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_EB16EFDAD31347B1B81B0C7DD15A53E7"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:TRUE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_CDC180134CA1C5889D6C56779C8114F5"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ManagedMenuHostViews, Version=1.0.0.0, Culture=neutral, PublicKeyToken=fb039b3d26e2ca59, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:ManagedMenuHostViews, Version=0.1.1.0, Culture=neutral, PublicKeyToken=fb039b3d26e2ca59, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
                     "_CDC180134CA1C5889D6C56779C8114F5"
@@ -345,6 +409,46 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E34CCBBE544D4F7785CB21C6E3A91068"
+            {
+            "SourcePath" = "8:..\\Lib\\Images\\MMEL.jpg"
+            "TargetName" = "8:MMEL.jpg"
+            "Tag" = "8:"
+            "Folder" = "8:_EB16EFDAD31347B1B81B0C7DD15A53E7"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:TRUE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F815F6631E664C1BAD5195F781747799"
+            {
+            "SourcePath" = "8:..\\Lib\\Images\\MMES.jpg"
+            "TargetName" = "8:MMES.jpg"
+            "Tag" = "8:"
+            "Folder" = "8:_EB16EFDAD31347B1B81B0C7DD15A53E7"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:TRUE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
         }
         "FileType"
         {
@@ -360,6 +464,28 @@
             "Property" = "8:ProgramMenuFolder"
                 "Folders"
                 {
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_B078B8D9E1484F5A88B1AAA3669FC449"
+                    {
+                    "Name" = "8:Jern"
+                    "AlwaysCreate" = "11:FALSE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_BC52C6750E61460086121B3CA00F6DD9"
+                        "Folders"
+                        {
+                            "{9EF0B969-E518-4E46-987F-47570745A589}:_A3FEA419E2E64B7189C87A311461A938"
+                            {
+                            "Name" = "8:Managed Menu Extensions"
+                            "AlwaysCreate" = "11:FALSE"
+                            "Condition" = "8:"
+                            "Transitive" = "11:FALSE"
+                            "Property" = "8:_652F426226B342EFAD7082F959A0140E"
+                                "Folders"
+                                {
+                                }
+                            }
+                        }
+                    }
                 }
             }
             "{1525181F-901A-416C-8A58-119130FE478E}:_94D03B5F7A83486F8D287A7984343AC6"
@@ -486,14 +612,14 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Managed Menu Extensions"
-        "ProductCode" = "8:{71187486-43B8-44C5-8DA3-31C3A431165C}"
-        "PackageCode" = "8:{2E53AC75-BBB2-4716-A6AA-CF088C276F4B}"
+        "ProductCode" = "8:{D27F8F62-6636-42ED-8A0A-16DC68F18E7F}"
+        "PackageCode" = "8:{184D7C1E-EE8B-4441-A1B4-556A9D59A0C3}"
         "UpgradeCode" = "8:{8C44E4EF-A959-43E6-A99C-804D87D6EEA1}"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.0"
+        "ProductVersion" = "8:0.1.1"
         "Manufacturer" = "8:Jern"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -503,7 +629,7 @@
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:"
         "ARPURLINFOABOUT" = "8:"
-        "ARPPRODUCTICON" = "8:"
+        "ARPPRODUCTICON" = "8:_C693C2999B5349359BA6BACB62B75903"
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"
@@ -639,7 +765,7 @@
             "Target" = "8:_0E5651C9AAAE46699058202C8D732E58"
             "Folder" = "8:_94D03B5F7A83486F8D287A7984343AC6"
             "WorkingFolder" = "8:_EB16EFDAD31347B1B81B0C7DD15A53E7"
-            "Icon" = "8:"
+            "Icon" = "8:_C693C2999B5349359BA6BACB62B75903"
             "Feature" = "8:"
             }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_E48C0C5B2F2A4BDBB8B77266CB1F046D"
@@ -651,9 +777,9 @@
             "IconIndex" = "3:0"
             "Transitive" = "11:TRUE"
             "Target" = "8:_0E5651C9AAAE46699058202C8D732E58"
-            "Folder" = "8:_4D41187944A943A8949D25B75012E30A"
+            "Folder" = "8:_A3FEA419E2E64B7189C87A311461A938"
             "WorkingFolder" = "8:_EB16EFDAD31347B1B81B0C7DD15A53E7"
-            "Icon" = "8:"
+            "Icon" = "8:_C693C2999B5349359BA6BACB62B75903"
             "Feature" = "8:"
             }
         }
@@ -695,7 +821,8 @@
                             "Type" = "3:8"
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
-                            "Setting" = "3:1"
+                            "Setting" = "3:2"
+                            "Value" = "8:_E34CCBBE544D4F7785CB21C6E3A91068"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "ShowProgress"
@@ -739,7 +866,8 @@
                             "Type" = "3:8"
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
-                            "Setting" = "3:1"
+                            "Setting" = "3:2"
+                            "Value" = "8:_E34CCBBE544D4F7785CB21C6E3A91068"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "CopyrightWarning"
@@ -750,8 +878,8 @@
                             "Type" = "3:3"
                             "ContextData" = "8:"
                             "Attributes" = "3:0"
-                            "Setting" = "3:1"
-                            "Value" = "8:#1202"
+                            "Setting" = "3:2"
+                            "Value" = "8:This computer program is licensed under the New BSD license. see http://www.codeplex.com/ManagedMenuExtension/Project/License.aspx"
                             "DefaultValue" = "8:#1202"
                             "UsePlugInResources" = "11:TRUE"
                             }
@@ -787,7 +915,8 @@
                             "Type" = "3:8"
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
-                            "Setting" = "3:1"
+                            "Setting" = "3:2"
+                            "Value" = "8:_E34CCBBE544D4F7785CB21C6E3A91068"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "InstallAllUsersVisible"
@@ -822,7 +951,8 @@
                             "Type" = "3:8"
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
-                            "Setting" = "3:1"
+                            "Setting" = "3:2"
+                            "Value" = "8:_E34CCBBE544D4F7785CB21C6E3A91068"
                             "UsePlugInResources" = "11:TRUE"
                             }
                         }
@@ -853,7 +983,8 @@
                             "Type" = "3:8"
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
-                            "Setting" = "3:1"
+                            "Setting" = "3:2"
+                            "Value" = "8:_E34CCBBE544D4F7785CB21C6E3A91068"
                             "UsePlugInResources" = "11:TRUE"
                             }
                         }
@@ -884,7 +1015,8 @@
                             "Type" = "3:8"
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
-                            "Setting" = "3:1"
+                            "Setting" = "3:2"
+                            "Value" = "8:_E34CCBBE544D4F7785CB21C6E3A91068"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "UpdateText"
@@ -928,7 +1060,8 @@
                             "Type" = "3:8"
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
-                            "Setting" = "3:1"
+                            "Setting" = "3:2"
+                            "Value" = "8:_E34CCBBE544D4F7785CB21C6E3A91068"
                             "UsePlugInResources" = "11:TRUE"
                             }
                         }
@@ -950,7 +1083,8 @@
                             "Type" = "3:8"
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
-                            "Setting" = "3:1"
+                            "Setting" = "3:2"
+                            "Value" = "8:_E34CCBBE544D4F7785CB21C6E3A91068"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "CopyrightWarning"
@@ -961,8 +1095,8 @@
                             "Type" = "3:3"
                             "ContextData" = "8:"
                             "Attributes" = "3:0"
-                            "Setting" = "3:1"
-                            "Value" = "8:#1202"
+                            "Setting" = "3:2"
+                            "Value" = "8:This computer program is licensed under the New BSD license. see http://www.codeplex.com/ManagedMenuExtension/Project/License.aspx"
                             "DefaultValue" = "8:#1202"
                             "UsePlugInResources" = "11:TRUE"
                             }
@@ -998,7 +1132,8 @@
                             "Type" = "3:8"
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
-                            "Setting" = "3:1"
+                            "Setting" = "3:2"
+                            "Value" = "8:_E34CCBBE544D4F7785CB21C6E3A91068"
                             "UsePlugInResources" = "11:TRUE"
                             }
                         }
@@ -1029,7 +1164,8 @@
                             "Type" = "3:8"
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
-                            "Setting" = "3:1"
+                            "Setting" = "3:2"
+                            "Value" = "8:_E34CCBBE544D4F7785CB21C6E3A91068"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "ShowProgress"
