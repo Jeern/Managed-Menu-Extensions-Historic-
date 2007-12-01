@@ -4,6 +4,7 @@ using System.Text;
 using System.AddIn.Pipeline;
 using ManagedMenuContracts;
 using ManagedMenuHostViews;
+using System.Text.RegularExpressions;
 
 namespace ManagedMenuHostAdapters
 {
@@ -40,6 +41,11 @@ namespace ManagedMenuHostAdapters
 
                 return new MenuItemViewToContract(m_MenuItemView.Parent); 
             }
+        }
+
+        public Regex VisibleWhenCompliantName
+        {
+            get { return m_MenuItemView.VisibleWhenCompliantName; }
         }
     }
 }

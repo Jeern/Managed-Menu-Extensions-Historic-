@@ -280,7 +280,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ManagedMenuAddInViews, Version=0.1.1.0, Culture=neutral, PublicKeyToken=fb039b3d26e2ca59, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:ManagedMenuAddInViews, Version=0.1.2.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
                     "_5F36C381F379D50BD77A03D9980C44AC"
@@ -311,7 +311,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ManagedMenuContracts, Version=0.1.1.0, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:ManagedMenuContracts, Version=0.1.2.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
                     "_9C06C35A0E8B639D3DEE353B564327AD"
@@ -382,7 +382,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ManagedMenuHostViews, Version=0.1.1.0, Culture=neutral, PublicKeyToken=fb039b3d26e2ca59, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:ManagedMenuHostViews, Version=0.1.2.0, Culture=neutral, PublicKeyToken=fb039b3d26e2ca59, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
                     "_CDC180134CA1C5889D6C56779C8114F5"
@@ -612,14 +612,14 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Managed Menu Extensions"
-        "ProductCode" = "8:{D27F8F62-6636-42ED-8A0A-16DC68F18E7F}"
-        "PackageCode" = "8:{184D7C1E-EE8B-4441-A1B4-556A9D59A0C3}"
+        "ProductCode" = "8:{6229A171-64E4-4793-B8C7-D134925D4B84}"
+        "PackageCode" = "8:{82A76669-8E71-4538-A28F-995AC4FE052A}"
         "UpgradeCode" = "8:{8C44E4EF-A959-43E6-A99C-804D87D6EEA1}"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:0.1.1"
+        "ProductVersion" = "8:0.1.2"
         "Manufacturer" = "8:Jern"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"

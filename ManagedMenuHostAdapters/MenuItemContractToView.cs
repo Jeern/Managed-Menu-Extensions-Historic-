@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using ManagedMenuHostViews;
 using ManagedMenuContracts;
+using System.Text.RegularExpressions;
 
 namespace ManagedMenuHostAdapters
 {
@@ -39,6 +40,11 @@ namespace ManagedMenuHostAdapters
 
                 return new MenuItemContractToView(m_MenuContract.Parent); 
             }
+        }
+
+        public override Regex VisibleWhenCompliantName
+        {
+            get { return m_MenuContract.VisibleWhenCompliantName; }
         }
     }
 }

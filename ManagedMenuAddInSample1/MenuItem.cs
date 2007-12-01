@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using ManagedMenuAddInViews;
+using System.Text.RegularExpressions;
 
 namespace ManagedMenuAddInSample1
 {
@@ -10,28 +11,15 @@ namespace ManagedMenuAddInSample1
         private string m_Caption = "";
         private Guid m_Id = Guid.NewGuid();
         private bool m_Seperator = false;
-        private MenuItem m_Parent = null;
 
-        public MenuItem(bool seperator, MenuItem parent)
+        public MenuItem(bool seperator)
         {
             m_Seperator = seperator;
-            m_Parent = parent;
-        }
-
-        public MenuItem(string caption, MenuItem parent)
-        {
-            m_Caption = caption;
-            m_Parent = parent;
         }
 
         public MenuItem(string caption)
         {
             m_Caption = caption;
-        }
-
-        public MenuItem(bool seperator)
-        {
-            m_Seperator = seperator;
         }
 
         public override string Caption
@@ -51,7 +39,12 @@ namespace ManagedMenuAddInSample1
 
         public override MenuItemView Parent
         {
-            get { return m_Parent; }
+            get { return null; }
+        }
+
+        public override Regex VisibleWhenCompliantName
+        {
+            get { return null; }
         }
     }
 }

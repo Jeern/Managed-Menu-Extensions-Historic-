@@ -10,11 +10,10 @@ namespace ManagedMenuAddInViews
         Project = 2,
         SolutionFolder = 4,
         Folder = 8,
-        Properties = 16,
         References = 32,
         WebReferences = 64,
         AssemblyInfo = 128,
-        Class = 256,
+        Item = 256,
         OtherItem = 512
     }
 }
