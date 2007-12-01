@@ -9,7 +9,7 @@ namespace ManagedMenuHost
     {
         public MenuTreeNode(string mainMenuCaption)
         {
-            m_MenuItem = new MenuItem(mainMenuCaption, Guid.NewGuid(), false, null); 
+            m_MenuItem = new MenuItem(mainMenuCaption, Guid.NewGuid(), false, null, null); 
         }
 
         public MenuTreeNode(MenuItemView menuItem)

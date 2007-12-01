@@ -1,4 +1,5 @@
 using System;
+using System.Text.RegularExpressions;
 
 namespace ManagedMenuHostViews
 {
@@ -17,6 +18,11 @@ namespace ManagedMenuHostViews
         }
 
         public abstract MenuItemView Parent
+        {
+            get;
+        }
+
+        public abstract Regex VisibleWhenCompliantName
         {
             get;
         }

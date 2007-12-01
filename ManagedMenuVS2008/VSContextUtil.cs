@@ -20,6 +20,16 @@ namespace ManagedMenuVS2008
                     return VSContextConstants.Solution;
                 case ContextLevels.Project:
                     return VSContextConstants.Project;
+                case ContextLevels.SolutionFolder:
+                    return VSContextConstants.SolutionFolder;
+                case ContextLevels.References:
+                    return VSContextConstants.References;
+                case ContextLevels.Item:
+                    return VSContextConstants.Item;
+                case ContextLevels.WebReferences:
+                    return VSContextConstants.WebReferences;
+                case ContextLevels.Folder:
+                    return VSContextConstants.Folder;
                 default:
                     return VSContextConstants.OtherItem;
             }
@@ -32,6 +42,16 @@ namespace ManagedMenuVS2008
                     return 1;
                 case ContextLevels.Project:
                     return 2;
+                case ContextLevels.SolutionFolder:
+                    return 1;
+                case ContextLevels.References:
+                    return 1;
+                case ContextLevels.Item:
+                    return 1;
+                case ContextLevels.WebReferences:
+                    return 1;
+                case ContextLevels.Folder:
+                    return 1;
                 default:
                     return 1;
             }

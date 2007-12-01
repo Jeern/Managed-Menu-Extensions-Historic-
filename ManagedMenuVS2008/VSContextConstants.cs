@@ -8,13 +8,12 @@ namespace ManagedMenuVS2008
     {
         public const string Solution = "Solution";
         public const string Project = "Project";
-        public const string SolutionFolder = "";
+        public const string SolutionFolder = "Solution Folder";
         public const string Folder = "Folder";
-        public const string Properties = "";
-        public const string References = "";
-        public const string WebReferences = "Web Project Folder"; //"Web Folder"??
-        public const string AssemblyInfo = "";
-        public const string Class = "";
+        public const string References = "Reference Root";
+        public const string WebReferences = "Web Reference Folder"; //"Web Folder"??
+        public const string AssemblyInfo = "Item";
+        public const string Item = "Item";
         public const string OtherItem = "";
 
     }

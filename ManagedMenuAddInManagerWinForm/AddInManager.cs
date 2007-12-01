@@ -45,12 +45,10 @@ namespace ManagedMenuAddInManagerWinForm
 
         private void ListToListView(List<AddIn> list)
         {
-            DisableItemCheckedEvent();
             foreach (AddIn addIn in list)
             {
                 AddInList.Items.Add(new ListViewItem(addIn.Name) { Checked = addIn.Enabled, Tag = addIn });   
             }
-            EnableItemCheckedEvent();
         }
 
         private List<AddIn> ListViewToList()
@@ -64,18 +62,6 @@ namespace ManagedMenuAddInManagerWinForm
                 }
             }
             return list;
-        }
-
-        private bool m_ItemCheckedEventEnabled = false;
-        
-        private void DisableItemCheckedEvent()
-        {
-            m_ItemCheckedEventEnabled = false;
-        }
-
-        private void EnableItemCheckedEvent()
-        {
-            m_ItemCheckedEventEnabled = true;
         }
 
         private void AddInList_ItemChecked(object sender, ItemCheckedEventArgs e)

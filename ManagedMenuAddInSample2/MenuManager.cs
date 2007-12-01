@@ -5,6 +5,7 @@ using System.AddIn;
 using System.Diagnostics;
 using System.Windows.Forms;
 using ManagedMenuAddInViews;
+using System.Text.RegularExpressions;
 
 namespace ManagedMenuAddInSample2
 {
@@ -13,7 +14,7 @@ namespace ManagedMenuAddInSample2
     /// And 3 if anything else is rightclicked. All Items are under the Main Menu "Managed Menu Extensions"
     /// If A menu is clicked. Info about the menus name, and the context in which it was clicked is displayed.
     /// </summary>
-    [AddIn("ManagedMenuAddInSample2", Version = "0.1.1.0")]
+    [AddIn("ManagedMenuAddInSample2", Version = "0.1.2.0")]
     public class MenuManager : MenuManagerAddInView
     {
         public override List<MenuItemView> CreateMenus(MenuContextView context)
@@ -23,16 +24,16 @@ namespace ManagedMenuAddInSample2
             {
                 menuItems = new List<MenuItemView> { new MenuItem("New"), new MenuItem("Open"), new MenuItem(true), new MenuItem("Add"), new MenuItem("Close") };
             }
-            else
+            else  //hej.ico
             {
-                menuItems = new List<MenuItemView> { new MenuItem("New"), new MenuItem("Open"), new MenuItem("Close") };
+                menuItems = new List<MenuItemView> { new MenuItem("New"), new MenuItem("Open"), new MenuItem("Close"), new MenuItem("OnlyIco", new Regex(@"\.ico")) };
             }
             return menuItems;
         }
 
         public override void MenuClicked(MenuItemView clickedMenu, MenuContextView menuContext)
         {
-            MessageBox.Show("Menu: " + clickedMenu.Caption + " Context: " + menuContext.Levels.ToString());
+            MessageBox.Show("Menu: " + clickedMenu.Caption + " Context: " + menuContext.Levels.ToString() + " Name: " + menuContext.Name + " Path: " + menuContext.Path);
         }
 
         public override string MainMenu(ApplicationTypes types)

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using ManagedMenuHostViews;
+using System.Text.RegularExpressions;
 
 namespace ManagedMenuHost
 {
@@ -11,13 +12,15 @@ namespace ManagedMenuHost
         private Guid m_Id;
         private bool m_Seperator;
         private MenuItem m_Parent;
+        private Regex m_VisibleWhenCompliantName;
 
-        public MenuItem(string caption, Guid id, bool seperator, MenuItem parent)
+        public MenuItem(string caption, Guid id, bool seperator, MenuItem parent, Regex visibleWhenCompliantName)
         {
             m_Caption = caption;
             m_Id = id;
             m_Seperator = seperator;
             m_Parent = parent;
+            m_VisibleWhenCompliantName = visibleWhenCompliantName;
         }
 
         public override string Caption
@@ -38,6 +41,11 @@ namespace ManagedMenuHost
         public override MenuItemView Parent
         {
             get { return m_Parent; }
+        }
+
+        public override Regex VisibleWhenCompliantName
+        {
+            get { return m_VisibleWhenCompliantName; }
         }
     }
 }
