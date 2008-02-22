@@ -21,9 +21,19 @@ namespace ManagedMenuHostAdapters
             get { return m_MenuContextView.Name; }
         }
 
+        public string FileName
+        {
+            get { return m_MenuContextView.FileName; }
+        }
+
         public string Path
         {
             get { return m_MenuContextView.Path; }
+        }
+
+        public string FullPath
+        {
+            get { return m_MenuContextView.FullPath; }
         }
 
         public ManagedMenuContracts.ContextLevels Levels

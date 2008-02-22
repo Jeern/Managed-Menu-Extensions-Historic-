@@ -41,7 +41,7 @@ namespace ManagedMenuVS2008
                 case ContextLevels.Solution:
                     return 1;
                 case ContextLevels.Project:
-                    return 2;
+                    return 1;
                 case ContextLevels.SolutionFolder:
                     return 1;
                 case ContextLevels.References:

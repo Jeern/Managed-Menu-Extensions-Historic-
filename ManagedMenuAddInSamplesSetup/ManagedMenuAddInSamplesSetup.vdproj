@@ -21,6 +21,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_20698981B974496C86C90F214C3F43DF"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_2CAD65ADD5B64B9BA5295E0878B6A9FE"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -33,13 +39,13 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_330ACBB5E9B3EB3CD9107E67AAC1E813"
+        "MsmKey" = "8:_5EE597B5A712F9782E6E38324C966178"
         "OwnerKey" = "8:_2E2E227E5AAF4E7A93EE1CD2547CC619"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_330ACBB5E9B3EB3CD9107E67AAC1E813"
+        "MsmKey" = "8:_5EE597B5A712F9782E6E38324C966178"
         "OwnerKey" = "8:_CFBB10F480C042E18E857ED799EA04C1"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -76,13 +82,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_CFBB10F480C042E18E857ED799EA04C1"
+        "OwnerKey" = "8:_5EE597B5A712F9782E6E38324C966178"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_330ACBB5E9B3EB3CD9107E67AAC1E813"
+        "OwnerKey" = "8:_CFBB10F480C042E18E857ED799EA04C1"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -210,14 +216,14 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_330ACBB5E9B3EB3CD9107E67AAC1E813"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_5EE597B5A712F9782E6E38324C966178"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ManagedMenuAddInViews, Version=0.1.2.0, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:ManagedMenuAddInViews, Version=0.1.2.0, Culture=neutral, PublicKeyToken=fb039b3d26e2ca59, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_330ACBB5E9B3EB3CD9107E67AAC1E813"
+                    "_5EE597B5A712F9782E6E38324C966178"
                     {
                     "Name" = "8:ManagedMenuAddInViews.dll"
                     "Attributes" = "3:512"
@@ -348,6 +354,17 @@
                     "Property" = "8:_6D9DDD00049C4248B14D67F11E9E3C6D"
                         "Folders"
                         {
+                            "{9EF0B969-E518-4E46-987F-47570745A589}:_2CD72B07C1A740E3B12A1EE80C2EC8A1"
+                            {
+                            "Name" = "8:XMLExtract"
+                            "AlwaysCreate" = "11:FALSE"
+                            "Condition" = "8:"
+                            "Transitive" = "11:FALSE"
+                            "Property" = "8:_C883CA6F5A5F46FA922F303BB5DA0021"
+                                "Folders"
+                                {
+                                }
+                            }
                             "{9EF0B969-E518-4E46-987F-47570745A589}:_4FC61D02E9664B46B7FDC9C0437B2399"
                             {
                             "Name" = "8:Sample1"
@@ -410,7 +427,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Managed Menu AddIn-Samples"
         "ProductCode" = "8:{EED9C6B4-EA69-472C-9EC5-70CE92CEB988}"
-        "PackageCode" = "8:{536C0648-AE74-4BDB-ACF4-D3AA23922BD8}"
+        "PackageCode" = "8:{27AC7959-2002-4C3D-B452-5A18304CCE06}"
         "UpgradeCode" = "8:{0F585D4C-929B-40BB-8ED6-29570237BE52}"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
@@ -924,6 +941,34 @@
         }
         "ProjectOutput"
         {
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_20698981B974496C86C90F214C3F43DF"
+            {
+            "SourcePath" = "8:..\\ManagedMenuAddInSampleXMLExtractOfClassFile\\obj\\Release\\ManagedMenuAddInSampleXMLExtractOfClassFile.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_2CD72B07C1A740E3B12A1EE80C2EC8A1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:1"
+            "OutputConfiguration" = "8:"
+            "OutputGroupCanonicalName" = "8:Built"
+            "OutputProjectGuid" = "8:{81B70707-65B7-4C3F-BB72-4EE1C8E3E07C}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_2CAD65ADD5B64B9BA5295E0878B6A9FE"
             {
             "SourcePath" = "8:..\\ManagedMenuAddInSamplesInstaller\\obj\\Release\\ManagedMenuAddInSamplesInstaller.dll"

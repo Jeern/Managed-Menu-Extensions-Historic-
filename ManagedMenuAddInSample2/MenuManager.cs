@@ -33,7 +33,12 @@ namespace ManagedMenuAddInSample2
 
         public override void MenuClicked(MenuItemView clickedMenu, MenuContextView menuContext)
         {
-            MessageBox.Show("Menu: " + clickedMenu.Caption + " Context: " + menuContext.Levels.ToString() + " Name: " + menuContext.Name + " Path: " + menuContext.Path);
+            MessageBox.Show("Menu: " + clickedMenu.Caption + 
+                "\nContext: " + menuContext.Levels.ToString() + 
+                "\nName: " + menuContext.Name +
+                "\nFileName: " + menuContext.FileName +
+                "\nPath: " + menuContext.Path +
+                "\nFullPath: " + menuContext.FullPath);
         }
 
         public override string MainMenu(ApplicationTypes types)

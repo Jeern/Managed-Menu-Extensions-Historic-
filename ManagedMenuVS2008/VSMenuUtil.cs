@@ -53,6 +53,16 @@ namespace ManagedMenuVS2008
                 CommandBarPopup menu = AddVSMainMenuItem(VSContextUtil.ContextToVSContext(level), VSContextUtil.ContextToVSContextIndex(level), node.MenuItem.Caption, node);
                 AddMainMenuClickEventHandler(menu);
                 TraverseChildren(menu, node, level);
+                SetVisibilityMainMenu(menu);
+            }
+        }
+
+        private void SetVisibilityMainMenu(CommandBarPopup mainMenu)
+        {
+            if (mainMenu.accChildCount == 0)
+            {
+                mainMenu.Visible = false;
+                return;
             }
         }
 
@@ -180,25 +190,7 @@ namespace ManagedMenuVS2008
             {
                 CommandBarControl cbc = (CommandBarControl)CommandBarControl;
                 string id = ((CommandBarControl)CommandBarControl).Tag;
-                //MessageBox.Show(m_VSStudio.FileName);
-                //MessageBox.Show(cbc.get_accName(null));
-                //MessageBox.Show(cbc.OnAction);
-                //MessageBox.Show(cbc.Parameter);
-                //MessageBox.Show(cbc.ToString());
-                //MessageBox.Show(cbc.get_accValue(null));
-                ////MessageBox.Show(cbc.accSelection.GetType().FullName);
-                //MessageBox.Show(cbc.Control.GetType().FullName);
-                //MessageBox.Show(cbc.Type.ToString());
-                //int left;
-                //int top;
-                //int width;
-                //int height;
-                //cbc.accLocation(out left, out top, out width, out height, null);
-                //MessageBox.Show(left.ToString() + " : " + top.ToString() + " : " + width.ToString() + " : " + height.ToString());
-                //MessageBox.Show(m_VSStudio.ActiveWindow.Caption);
-                //MessageBox.Show(cbc.Index.ToString());
-                //MessageBox.Show(cbc.Id.ToString());
-                m_Host.MenuClicked(m_VSMenuToMenuItem[id].Id, new MenuContext(SelectedItemName, SelectedItemPath, m_ContextsFromMenus[id]));
+                m_Host.MenuClicked(m_VSMenuToMenuItem[id].Id, new MenuContext(SelectedItemName, SelectedItemFileName, SelectedItemPath, SelectedItemFullPath, m_ContextsFromMenus[id]));
             }
             catch (Exception ex)
             {
@@ -250,6 +242,49 @@ namespace ManagedMenuVS2008
         {
             get
             {
+                if (SelectedItem.Object is ProjectItem)
+                    return GetPath(((ProjectItem)SelectedItem.Object).get_FileNames(1));
+
+                if (SelectedItem.Object is Project)
+                    return GetPath(GetProjectFullName((Project)SelectedItem.Object));
+
+                if (SelectedItem.Object is Solution)
+                    return GetPath((((Solution)SelectedItem.Object).FullName));
+
+                return string.Empty;
+            }
+        }
+
+        private string SelectedItemFullPath
+        {
+            get
+            {
+                if (SelectedItem.Object is ProjectItem)
+                    return ((ProjectItem)SelectedItem.Object).get_FileNames(1);
+
+                if (SelectedItem.Object is Project)
+                    return GetProjectFullName((Project)SelectedItem.Object);
+
+                if (SelectedItem.Object is Solution)
+                    return (((Solution)SelectedItem.Object).FullName);
+
+                return string.Empty;
+            }
+        }
+
+        private string SelectedItemFileName
+        {
+            get
+            {
+                if (SelectedItem.Object is ProjectItem)
+                    return GetFileName(((ProjectItem)SelectedItem.Object).get_FileNames(1));
+
+                if (SelectedItem.Object is Project)
+                    return GetFileName(GetProjectFullName((Project)SelectedItem.Object));
+
+                if (SelectedItem.Object is Solution)
+                    return GetFileName((((Solution)SelectedItem.Object).FullName));
+
                 return string.Empty;
             }
         }
@@ -299,6 +334,70 @@ namespace ManagedMenuVS2008
                 return true;
 
             return regex.IsMatch(name);
+        }
+
+        /// <summary>
+        /// Code borrowed from http://www.codeproject.com/KB/macros/zipstudio.aspx - Thank you...
+        /// </summary>
+        /// <param name="Project"></param>
+        /// <returns></returns>
+        private string GetProjectFullName(Project Project)
+        {
+            string filePath = Project.FullName;
+            // Find the file extension of the project FullName.
+            int extIndex = filePath.LastIndexOf('.');
+            string filePathExt =
+              (extIndex > 0) ? filePath.Substring(extIndex + 1) : "";
+            // Find the file extension of the project UniqueName.
+            extIndex = Project.UniqueName.LastIndexOf('.');
+            string uniqueExt =
+              (extIndex > 0) ? Project.UniqueName.Substring(extIndex + 1) : "";
+            // If different use the UniqueName extension.
+            if (filePathExt != uniqueExt)
+            {
+                // If the FullName does not have an extension,
+                // add the one from UniqueName.
+                if (filePathExt == "") filePath += "." + uniqueExt;
+                // Else replace it.
+                else filePath = filePath.Replace(filePathExt, uniqueExt);
+            }
+            return filePath;
+        }
+
+        /// <summary>
+        /// Returns the Path - given a FileName
+        /// </summary>
+        /// <param name="filename"></param>
+        /// <returns></returns>
+        private string GetPath(string filename)
+        {
+            DirectoryInfo di = new DirectoryInfo(filename);
+            if (string.IsNullOrEmpty(di.Extension))
+                return PathAddSlash(filename);
+
+            return PathAddSlash(di.FullName.Substring(0, di.FullName.Length - di.Name.Length));
+        }
+
+        /// <summary>
+        /// Returns the FileName - given a Full path
+        /// </summary>
+        /// <param name="filename"></param>
+        /// <returns></returns>
+        private string GetFileName(string fullpath)
+        {
+            DirectoryInfo di = new DirectoryInfo(fullpath);
+            if (string.IsNullOrEmpty(di.Extension))
+                return string.Empty;
+
+            return di.Name;
+        }
+
+        private string PathAddSlash(string path)
+        {
+            if (path.EndsWith(@"\"))
+                return path;
+
+            return path + @"\";
         }
     }
 }
