@@ -49,6 +49,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{0F6F07
 		Lib\Images\MMExtArchitecture.JPG = Lib\Images\MMExtArchitecture.JPG
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedMenuAddInSampleXMLExtractOfClassFile", "ManagedMenuAddInSampleXMLExtractOfClassFile\ManagedMenuAddInSampleXMLExtractOfClassFile.csproj", "{81B70707-65B7-4C3F-BB72-4EE1C8E3E07C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -95,6 +97,10 @@ Global
 		{0846235E-C888-4C90-B958-F5BE24385ED4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0846235E-C888-4C90-B958-F5BE24385ED4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0846235E-C888-4C90-B958-F5BE24385ED4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81B70707-65B7-4C3F-BB72-4EE1C8E3E07C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81B70707-65B7-4C3F-BB72-4EE1C8E3E07C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81B70707-65B7-4C3F-BB72-4EE1C8E3E07C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81B70707-65B7-4C3F-BB72-4EE1C8E3E07C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -25,9 +25,19 @@ namespace ManagedMenuAddInAdapters
             get { return m_MenuContext.Name; }
         }
 
+        public override string FileName
+        {
+            get { return m_MenuContext.FileName; }
+        }
+
         public override string Path
         {
             get { return m_MenuContext.Path; }
+        }
+
+        public override string FullPath
+        {
+            get { return m_MenuContext.FullPath; }
         }
 
         public override ManagedMenuAddInViews.ContextLevels Levels
