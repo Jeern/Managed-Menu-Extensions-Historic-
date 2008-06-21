@@ -7,6 +7,7 @@ namespace ManagedMenuVS2008
 {
     public static class VSContextUtil
     {
+        //Test af SVNBridge2
         public static bool IsSolution()
         {
             return false;
