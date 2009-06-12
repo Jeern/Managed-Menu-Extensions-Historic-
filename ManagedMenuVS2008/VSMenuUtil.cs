@@ -242,14 +242,17 @@ namespace ManagedMenuVS2008
         {
             get
             {
-                if (SelectedItem.Object is ProjectItem)
-                    return GetPath(((ProjectItem)SelectedItem.Object).get_FileNames(1));
+                var solution = SelectedItem.Object as Solution;
+                if (solution != null)
+                    return GetPath(solution.FullName);
 
-                if (SelectedItem.Object is Project)
-                    return GetPath(GetProjectFullName((Project)SelectedItem.Object));
+                Project project = GetProject(SelectedItem.Object);
+                if (project != null)
+                    return GetPath(GetProjectFullName(project));
 
-                if (SelectedItem.Object is Solution)
-                    return GetPath((((Solution)SelectedItem.Object).FullName));
+                var item = SelectedItem.Object as ProjectItem;
+                if (item != null)
+                    return GetPath(item.get_FileNames(1));
 
                 return string.Empty;
             }
@@ -259,14 +262,18 @@ namespace ManagedMenuVS2008
         {
             get
             {
-                if (SelectedItem.Object is ProjectItem)
-                    return ((ProjectItem)SelectedItem.Object).get_FileNames(1);
 
-                if (SelectedItem.Object is Project)
-                    return GetProjectFullName((Project)SelectedItem.Object);
+                var solution = SelectedItem.Object as Solution;
+                if (solution != null)
+                    return solution.FullName;
 
-                if (SelectedItem.Object is Solution)
-                    return (((Solution)SelectedItem.Object).FullName);
+                Project project = GetProject(SelectedItem.Object);
+                if (project != null)
+                    return GetProjectFullName(project);
+
+                var item = SelectedItem.Object as ProjectItem;
+                if (item != null)
+                    return item.get_FileNames(1);
 
                 return string.Empty;
             }
@@ -276,18 +283,41 @@ namespace ManagedMenuVS2008
         {
             get
             {
-                if (SelectedItem.Object is ProjectItem)
-                    return GetFileName(((ProjectItem)SelectedItem.Object).get_FileNames(1));
+                var solution = SelectedItem.Object as Solution;
+                if (solution != null)
+                    return GetFileName(solution.FullName);
 
-                if (SelectedItem.Object is Project)
-                    return GetFileName(GetProjectFullName((Project)SelectedItem.Object));
+                Project project = GetProject(SelectedItem.Object);
+                if (project != null)
+                    return GetFileName(GetProjectFullName(project));
 
-                if (SelectedItem.Object is Solution)
-                    return GetFileName((((Solution)SelectedItem.Object).FullName));
+                var item = SelectedItem.Object as ProjectItem;
+                if (item != null)
+                    return GetFileName(item.get_FileNames(1));
 
                 return string.Empty;
             }
         }
+
+        /// <summary>
+        /// Returns af project. Because of problems with Projects that are subprojects of solution folders
+        /// it is not as easy as casting. Instead we must do some more magic.
+        /// </summary>
+        /// <param name="selectedItemObject"></param>
+        /// <returns></returns>
+        private Project GetProject(object selectedItemObject)
+        {
+            var project = selectedItemObject as Project;
+            if (project != null)
+                return project;
+
+            var item = selectedItemObject as ProjectItem;
+            if (item == null)
+                return null;
+
+            return item.SubProject;
+        }
+
 
         private void SetVisibilityChildren(CommandBarPopup vsmainMenu)
         {
