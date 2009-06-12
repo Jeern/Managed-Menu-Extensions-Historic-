@@ -16,3 +16,5 @@ to be able to get back to the default setup.
 
 1033 is the number associated with the english culture, for other cultures, 
 similar corrections should be made to the wid files of the approiate folders.
+
+OBS: The setup dialogs in this Zip file corresponds to those of VS2008 sp1 for other settings it might not work.
