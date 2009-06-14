@@ -190,6 +190,7 @@ namespace ManagedMenuVS2008
             {
                 CommandBarControl cbc = (CommandBarControl)CommandBarControl;
                 string id = ((CommandBarControl)CommandBarControl).Tag;
+
                 m_Host.MenuClicked(m_VSMenuToMenuItem[id].Id, new MenuContext(SelectedItemName, SelectedItemFileName, SelectedItemPath, SelectedItemFullPath, m_ContextsFromMenus[id]));
             }
             catch (Exception ex)
@@ -246,6 +247,9 @@ namespace ManagedMenuVS2008
                 if (solution != null)
                     return GetPath(solution.FullName);
 
+                if (IsSolutionFolder(SelectedItem.Object))
+                    return GetSolutionFolderPath(); //Currently just path of Solution (problem is what is really the path of Solution Folder ? Since Solution Folder is virtual it doesn't really have one.
+
                 Project project = GetProject(SelectedItem.Object);
                 if (project != null)
                     return GetPath(GetProjectFullName(project));
@@ -258,6 +262,17 @@ namespace ManagedMenuVS2008
             }
         }
 
+        /// <summary>
+        /// This method is really there to solve a problem with solution folders which does not have a filename, and therefore not a path. 
+        /// Currently I just get the solution folders path as the SolutionFolder path (see SelectedItemPath)
+        /// </summary>
+        /// <param name="currentObject"></param>
+        /// <returns></returns>
+        private string GetSolutionFolderPath()
+        {
+            return GetPath(m_VSStudio.Solution.FullName);
+        }
+
         private string SelectedItemFullPath
         {
             get
@@ -266,6 +281,9 @@ namespace ManagedMenuVS2008
                 var solution = SelectedItem.Object as Solution;
                 if (solution != null)
                     return solution.FullName;
+
+                if (IsSolutionFolder(SelectedItem.Object))
+                    return string.Empty;
 
                 Project project = GetProject(SelectedItem.Object);
                 if (project != null)
@@ -286,6 +304,9 @@ namespace ManagedMenuVS2008
                 var solution = SelectedItem.Object as Solution;
                 if (solution != null)
                     return GetFileName(solution.FullName);
+
+                if (IsSolutionFolder(SelectedItem.Object))
+                    return string.Empty;
 
                 Project project = GetProject(SelectedItem.Object);
                 if (project != null)
@@ -316,6 +337,21 @@ namespace ManagedMenuVS2008
                 return null;
 
             return item.SubProject;
+        }
+
+        /// <summary>
+        /// Evaluates if the item is a SolutionFolder. Does it by looking at the FileName property if it is empty it must be a solution folder.
+        /// Because a normal Project always have a FileName. There is probably a more correct way of doing this, but will do
+        /// for now.
+        /// </summary>
+        /// <param name="SelectedItemObject"></param>
+        /// <returns></returns>
+        private bool IsSolutionFolder(object selectedItemObject)
+        {
+            var project = GetProject(selectedItemObject);
+            if (project != null && string.IsNullOrEmpty(project.FileName))
+                return true;
+            return false;
         }
 
 
