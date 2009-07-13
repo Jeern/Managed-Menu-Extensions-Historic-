@@ -358,7 +358,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ManagedMenuHostViews, Version=0.1.3.0, Culture=neutral, PublicKeyToken=f383dc8b57937be2, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:ManagedMenuHostViews, Version=0.1.4.2, Culture=neutral, PublicKeyToken=fb039b3d26e2ca59, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
                     "_238179EE70E62796F30A92C7402AC136"
@@ -460,7 +460,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ManagedMenuHost, Version=0.1.3.0, Culture=neutral, PublicKeyToken=f383dc8b57937be2, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:ManagedMenuHost, Version=0.1.4.2, Culture=neutral, PublicKeyToken=fb039b3d26e2ca59, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
                     "_53742D6499763288AE276FC472E4956B"
@@ -780,14 +780,14 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Managed Menu Ext Helper VS2008"
-        "ProductCode" = "8:{83EF34DA-FFA0-4BE1-A30C-6383A8FF1032}"
-        "PackageCode" = "8:{87259984-7F15-4EB2-96E0-3DA9D26A2488}"
+        "ProductCode" = "8:{020599A0-20AB-4081-9301-1B8E7D30A218}"
+        "PackageCode" = "8:{48329EC8-8F45-40C7-87AC-6388E2C66E6D}"
         "UpgradeCode" = "8:{92C78C6E-B9D6-4833-9B00-EC0CCD9EB6CC}"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:0.1.4"
+        "ProductVersion" = "8:0.1.5"
         "Manufacturer" = "8:Jern"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"

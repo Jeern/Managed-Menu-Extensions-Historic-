@@ -280,7 +280,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ManagedMenuAddInViews, Version=0.1.3.0, Culture=neutral, PublicKeyToken=f383dc8b57937be2, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:ManagedMenuAddInViews, Version=0.1.4.2, Culture=neutral, PublicKeyToken=fb039b3d26e2ca59, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
                     "_4D07743D5775A0C6730D149AA622013C"
@@ -311,7 +311,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ManagedMenuContracts, Version=0.1.3.0, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:ManagedMenuContracts, Version=0.1.4.2, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
                     "_944F53C0ABACE8A0717AB00105DA86FB"
@@ -402,7 +402,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ManagedMenuHostViews, Version=0.1.3.0, Culture=neutral, PublicKeyToken=f383dc8b57937be2, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:ManagedMenuHostViews, Version=0.1.4.2, Culture=neutral, PublicKeyToken=fb039b3d26e2ca59, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
                     "_ECAC1D2DFE30C59E34CD976F9E086C10"
@@ -510,6 +510,95 @@
                 {
                 }
             }
+            "{994432C3-9487-495D-8656-3E829A8DBDDE}:_D87EA89F57E94EBAAE28687F111D3B9E"
+            {
+            "DefaultLocation" = "8:[CommonAppDataFolder]"
+            "Name" = "8:CommonAppDataFolder"
+            "AlwaysCreate" = "11:FALSE"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Property" = "8:COMMONAPPDATAFOLDER"
+                "Folders"
+                {
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_6B31ACFC527848A39572BFA6C67892DE"
+                    {
+                    "Name" = "8:ManagedMenuExtensions"
+                    "AlwaysCreate" = "11:FALSE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_B0C4359496B34875A9328D69A76619FC"
+                        "Folders"
+                        {
+                            "{9EF0B969-E518-4E46-987F-47570745A589}:_061C59C1E5314D0AAD67020E4BB224D5"
+                            {
+                            "Name" = "8:AddInViews"
+                            "AlwaysCreate" = "11:TRUE"
+                            "Condition" = "8:"
+                            "Transitive" = "11:FALSE"
+                            "Property" = "8:_26BB1BC78C2245E09F67D5DFE5C8D6E9"
+                                "Folders"
+                                {
+                                }
+                            }
+                            "{9EF0B969-E518-4E46-987F-47570745A589}:_1A2A0DBE704649EB9C26C3643D19972E"
+                            {
+                            "Name" = "8:HostSideAdapters"
+                            "AlwaysCreate" = "11:TRUE"
+                            "Condition" = "8:"
+                            "Transitive" = "11:FALSE"
+                            "Property" = "8:_FC29BE33410241358E855248FF9CFC73"
+                                "Folders"
+                                {
+                                }
+                            }
+                            "{9EF0B969-E518-4E46-987F-47570745A589}:_294CB69123D548FA8784E4C58D4A692E"
+                            {
+                            "Name" = "8:Contracts"
+                            "AlwaysCreate" = "11:TRUE"
+                            "Condition" = "8:"
+                            "Transitive" = "11:FALSE"
+                            "Property" = "8:_998D658B4BB8412EBAD04CA2ABD40D09"
+                                "Folders"
+                                {
+                                }
+                            }
+                            "{9EF0B969-E518-4E46-987F-47570745A589}:_2DD7CE762EC0480CBE3D688AE76500B7"
+                            {
+                            "Name" = "8:AddInsDisabled"
+                            "AlwaysCreate" = "11:TRUE"
+                            "Condition" = "8:"
+                            "Transitive" = "11:FALSE"
+                            "Property" = "8:_3E90A716A2BD4780A595B1492B13A319"
+                                "Folders"
+                                {
+                                }
+                            }
+                            "{9EF0B969-E518-4E46-987F-47570745A589}:_3EC8DFFE106E4B5384F10147B80C36D1"
+                            {
+                            "Name" = "8:AddIns"
+                            "AlwaysCreate" = "11:TRUE"
+                            "Condition" = "8:"
+                            "Transitive" = "11:FALSE"
+                            "Property" = "8:_C7009F1C56FF45CAA929039E1446183A"
+                                "Folders"
+                                {
+                                }
+                            }
+                            "{9EF0B969-E518-4E46-987F-47570745A589}:_D63738220ECC4DEF88740192233C6A3B"
+                            {
+                            "Name" = "8:AddInSideAdapters"
+                            "AlwaysCreate" = "11:TRUE"
+                            "Condition" = "8:"
+                            "Transitive" = "11:FALSE"
+                            "Property" = "8:_5C85A00A74304F90964B1B651B2E545E"
+                                "Folders"
+                                {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
             "{3C67513D-01DD-4637-8A68-80971EB9504F}:_EB16EFDAD31347B1B81B0C7DD15A53E7"
             {
             "DefaultLocation" = "8:[ProgramFilesFolder][Manufacturer]\\[ProductName]"
@@ -520,72 +609,6 @@
             "Property" = "8:TARGETDIR"
                 "Folders"
                 {
-                    "{9EF0B969-E518-4E46-987F-47570745A589}:_155B4FC310E44470A46BAC3B40F4666B"
-                    {
-                    "Name" = "8:HostSideAdapters"
-                    "AlwaysCreate" = "11:TRUE"
-                    "Condition" = "8:"
-                    "Transitive" = "11:FALSE"
-                    "Property" = "8:_FC29BE33410241358E855248FF9CFC73"
-                        "Folders"
-                        {
-                        }
-                    }
-                    "{9EF0B969-E518-4E46-987F-47570745A589}:_339645C7D0294432A807AC8012629745"
-                    {
-                    "Name" = "8:AddInsDisabled"
-                    "AlwaysCreate" = "11:TRUE"
-                    "Condition" = "8:"
-                    "Transitive" = "11:FALSE"
-                    "Property" = "8:_3E90A716A2BD4780A595B1492B13A319"
-                        "Folders"
-                        {
-                        }
-                    }
-                    "{9EF0B969-E518-4E46-987F-47570745A589}:_4E958B773AF4439091BBAC92AB5C5E05"
-                    {
-                    "Name" = "8:Contracts"
-                    "AlwaysCreate" = "11:TRUE"
-                    "Condition" = "8:"
-                    "Transitive" = "11:FALSE"
-                    "Property" = "8:_998D658B4BB8412EBAD04CA2ABD40D09"
-                        "Folders"
-                        {
-                        }
-                    }
-                    "{9EF0B969-E518-4E46-987F-47570745A589}:_6A2B7EF05184463BA583AB83700D3498"
-                    {
-                    "Name" = "8:AddInViews"
-                    "AlwaysCreate" = "11:TRUE"
-                    "Condition" = "8:"
-                    "Transitive" = "11:FALSE"
-                    "Property" = "8:_26BB1BC78C2245E09F67D5DFE5C8D6E9"
-                        "Folders"
-                        {
-                        }
-                    }
-                    "{9EF0B969-E518-4E46-987F-47570745A589}:_70DEC09C5B6143A393A0A64020E68D9A"
-                    {
-                    "Name" = "8:AddIns"
-                    "AlwaysCreate" = "11:TRUE"
-                    "Condition" = "8:"
-                    "Transitive" = "11:FALSE"
-                    "Property" = "8:_C7009F1C56FF45CAA929039E1446183A"
-                        "Folders"
-                        {
-                        }
-                    }
-                    "{9EF0B969-E518-4E46-987F-47570745A589}:_A14246A7CBDB4526BDA5BB80E3129C8F"
-                    {
-                    "Name" = "8:AddInSideAdapters"
-                    "AlwaysCreate" = "11:TRUE"
-                    "Condition" = "8:"
-                    "Transitive" = "11:FALSE"
-                    "Property" = "8:_5C85A00A74304F90964B1B651B2E545E"
-                        "Folders"
-                        {
-                        }
-                    }
                 }
             }
         }
@@ -612,14 +635,14 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Managed Menu Extensions"
-        "ProductCode" = "8:{27CAE926-3B87-4CBA-A865-AE6C284F1A1C}"
-        "PackageCode" = "8:{0D54D52B-302B-43E4-AE2D-BF63F4086E63}"
+        "ProductCode" = "8:{686CD305-1BDF-4486-B01B-15522A3FFDA3}"
+        "PackageCode" = "8:{ABEB3965-B47F-459D-87CB-2FE8442C9FE0}"
         "UpgradeCode" = "8:{8C44E4EF-A959-43E6-A99C-804D87D6EEA1}"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:0.1.4"
+        "ProductVersion" = "8:0.1.5"
         "Manufacturer" = "8:Jern"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -680,7 +703,7 @@
                                             "Condition" = "8:"
                                             "Transitive" = "11:FALSE"
                                             "ValueTypes" = "3:1"
-                                            "Value" = "8:[TARGETDIR]"
+                                            "Value" = "8:[CommonAppDataFolder]\\ManagedMenuExtensions"
                                             }
                                         }
                                     }
@@ -764,7 +787,7 @@
             "Transitive" = "11:TRUE"
             "Target" = "8:_0E5651C9AAAE46699058202C8D732E58"
             "Folder" = "8:_94D03B5F7A83486F8D287A7984343AC6"
-            "WorkingFolder" = "8:_EB16EFDAD31347B1B81B0C7DD15A53E7"
+            "WorkingFolder" = "8:_6B31ACFC527848A39572BFA6C67892DE"
             "Icon" = "8:_C693C2999B5349359BA6BACB62B75903"
             "Feature" = "8:"
             }
@@ -778,7 +801,7 @@
             "Transitive" = "11:TRUE"
             "Target" = "8:_0E5651C9AAAE46699058202C8D732E58"
             "Folder" = "8:_A3FEA419E2E64B7189C87A311461A938"
-            "WorkingFolder" = "8:_EB16EFDAD31347B1B81B0C7DD15A53E7"
+            "WorkingFolder" = "8:_6B31ACFC527848A39572BFA6C67892DE"
             "Icon" = "8:_C693C2999B5349359BA6BACB62B75903"
             "Feature" = "8:"
             }
@@ -1196,7 +1219,7 @@
             "SourcePath" = "8:..\\ManagedMenuContracts\\obj\\Release\\ManagedMenuContracts.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
-            "Folder" = "8:_4E958B773AF4439091BBAC92AB5C5E05"
+            "Folder" = "8:_294CB69123D548FA8784E4C58D4A692E"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -1224,7 +1247,7 @@
             "SourcePath" = "8:..\\ManagedMenuAddInManagerWinForm\\obj\\Release\\ManagedMenuAddInManagerWinForm.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
-            "Folder" = "8:_EB16EFDAD31347B1B81B0C7DD15A53E7"
+            "Folder" = "8:_D87EA89F57E94EBAAE28687F111D3B9E"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -1252,7 +1275,7 @@
             "SourcePath" = "8:..\\ManagedMenuHostAdapters\\obj\\Release\\ManagedMenuHostAdapters.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
-            "Folder" = "8:_155B4FC310E44470A46BAC3B40F4666B"
+            "Folder" = "8:_1A2A0DBE704649EB9C26C3643D19972E"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -1280,7 +1303,7 @@
             "SourcePath" = "8:..\\ManagedMenuAddInViews\\obj\\Release\\ManagedMenuAddInViews.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
-            "Folder" = "8:_6A2B7EF05184463BA583AB83700D3498"
+            "Folder" = "8:_061C59C1E5314D0AAD67020E4BB224D5"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -1336,7 +1359,7 @@
             "SourcePath" = "8:..\\ManagedMenuAddInAdapters\\obj\\Release\\ManagedMenuAddInAdapters.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
-            "Folder" = "8:_A14246A7CBDB4526BDA5BB80E3129C8F"
+            "Folder" = "8:_D63738220ECC4DEF88740192233C6A3B"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
