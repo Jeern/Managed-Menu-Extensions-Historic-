@@ -14,7 +14,7 @@ namespace ManagedMenuAddInSample2
     /// And 3 if anything else is rightclicked. All Items are under the Main Menu "Managed Menu Extensions"
     /// If A menu is clicked. Info about the menus name, and the context in which it was clicked is displayed.
     /// </summary>
-    [AddIn("ManagedMenuAddInSample2", Version = "0.1.4.1")]
+    [AddIn("ManagedMenuAddInSample2", Version = "0.1.4.2")]
     public class MenuManager : MenuManagerAddInView
     {
         public override List<MenuItemView> CreateMenus(MenuContextView context)

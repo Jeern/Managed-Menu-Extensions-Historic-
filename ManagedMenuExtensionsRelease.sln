@@ -23,6 +23,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddInManagerWinForm", "Mana
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{984FAC14-24E2-4EB8-A233-0DA394E117EE}"
 	ProjectSection(SolutionItems) = preProject
+		Lib\GlobalAssemblyInfo.cs = Lib\GlobalAssemblyInfo.cs
 		Lib\jern.pfx = Lib\jern.pfx
 	EndProjectSection
 EndProject
