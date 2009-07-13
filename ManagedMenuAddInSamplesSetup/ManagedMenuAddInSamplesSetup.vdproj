@@ -64,13 +64,13 @@
         "Entry"
         {
         "MsmKey" = "8:_F78AD273537E58960912C91745B82D5A"
-        "OwnerKey" = "8:_CFBB10F480C042E18E857ED799EA04C1"
+        "OwnerKey" = "8:_2E2E227E5AAF4E7A93EE1CD2547CC619"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_F78AD273537E58960912C91745B82D5A"
-        "OwnerKey" = "8:_2E2E227E5AAF4E7A93EE1CD2547CC619"
+        "OwnerKey" = "8:_CFBB10F480C042E18E857ED799EA04C1"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -272,7 +272,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ManagedMenuAddInViews, Version=0.1.4.2, Culture=neutral, PublicKeyToken=fb039b3d26e2ca59, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:ManagedMenuAddInViews, Version=0.1.5.0, Culture=neutral, PublicKeyToken=fb039b3d26e2ca59, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
                     "_F78AD273537E58960912C91745B82D5A"
@@ -462,7 +462,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Managed Menu AddIn-Samples"
         "ProductCode" = "8:{98B1125F-98B5-4860-A89A-4E213715FD93}"
-        "PackageCode" = "8:{6966CAD9-2A7C-49DD-B400-363BAD23FBA8}"
+        "PackageCode" = "8:{F828376F-01F1-4CCA-8DBE-EF916F10B1F6}"
         "UpgradeCode" = "8:{0F585D4C-929B-40BB-8ED6-29570237BE52}"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
@@ -653,7 +653,7 @@
                             "ContextData" = "8:"
                             "Attributes" = "3:0"
                             "Setting" = "3:2"
-                            "Value" = "8:This computer program is licensed under the New BSD license. see http://www.codeplex.com/ManagedMenuExtension/Project/License.aspx"
+                            "Value" = "8:This computer program is licensed under the Ms-PL. See http://managedmenuextension.codeplex.com/license"
                             "DefaultValue" = "8:#1202"
                             "UsePlugInResources" = "11:TRUE"
                             }
@@ -770,7 +770,7 @@
                             "ContextData" = "8:"
                             "Attributes" = "3:0"
                             "Setting" = "3:2"
-                            "Value" = "8:This computer program is licensed under the New BSD license. see http://www.codeplex.com/ManagedMenuExtension/Project/License.aspx"
+                            "Value" = "8:This computer program is licensed under the Ms-PL. See http://managedmenuextension.codeplex.com/license"
                             "DefaultValue" = "8:#1202"
                             "UsePlugInResources" = "11:TRUE"
                             }

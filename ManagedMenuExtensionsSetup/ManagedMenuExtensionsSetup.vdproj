@@ -280,7 +280,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ManagedMenuAddInViews, Version=0.1.4.2, Culture=neutral, PublicKeyToken=fb039b3d26e2ca59, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:ManagedMenuAddInViews, Version=0.1.5.0, Culture=neutral, PublicKeyToken=fb039b3d26e2ca59, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
                     "_4D07743D5775A0C6730D149AA622013C"
@@ -311,7 +311,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ManagedMenuContracts, Version=0.1.4.2, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:ManagedMenuContracts, Version=0.1.5.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
                     "_944F53C0ABACE8A0717AB00105DA86FB"
@@ -402,7 +402,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ManagedMenuHostViews, Version=0.1.4.2, Culture=neutral, PublicKeyToken=fb039b3d26e2ca59, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:ManagedMenuHostViews, Version=0.1.5.0, Culture=neutral, PublicKeyToken=fb039b3d26e2ca59, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
                     "_ECAC1D2DFE30C59E34CD976F9E086C10"
@@ -636,7 +636,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Managed Menu Extensions"
         "ProductCode" = "8:{686CD305-1BDF-4486-B01B-15522A3FFDA3}"
-        "PackageCode" = "8:{ABEB3965-B47F-459D-87CB-2FE8442C9FE0}"
+        "PackageCode" = "8:{BFFEF8C4-33A2-4A38-B902-E2079BEB83EE}"
         "UpgradeCode" = "8:{8C44E4EF-A959-43E6-A99C-804D87D6EEA1}"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
@@ -902,7 +902,7 @@
                             "ContextData" = "8:"
                             "Attributes" = "3:0"
                             "Setting" = "3:2"
-                            "Value" = "8:This computer program is licensed under the New BSD license. see http://www.codeplex.com/ManagedMenuExtension/Project/License.aspx"
+                            "Value" = "8:This computer program is licensed under the Ms-PL. See http://managedmenuextension.codeplex.com/license"
                             "DefaultValue" = "8:#1202"
                             "UsePlugInResources" = "11:TRUE"
                             }
@@ -1119,7 +1119,7 @@
                             "ContextData" = "8:"
                             "Attributes" = "3:0"
                             "Setting" = "3:2"
-                            "Value" = "8:This computer program is licensed under the New BSD license. see http://www.codeplex.com/ManagedMenuExtension/Project/License.aspx"
+                            "Value" = "8:This computer program is licensed under the Ms-PL. See http://managedmenuextension.codeplex.com/license"
                             "DefaultValue" = "8:#1202"
                             "UsePlugInResources" = "11:TRUE"
                             }
