@@ -21,7 +21,7 @@ namespace ManagedMenuAddInSampleXMLExtractOfClassFile
     /// Since it uses reflection.
     /// Uses as can be seen a VERY primitive parsing :O)
     /// </summary>
-    [AddIn("ManagedMenuAddInSampleXMLExtractOfClassFile", Version = "0.1.5.0")]
+    [AddIn("ManagedMenuAddInSampleXMLExtractOfClassFile", Version = "0.1.5.1")]
     public class MenuManager : MenuManagerAddInView
     {
         public override List<MenuItemView> CreateMenus(MenuContextView context)
