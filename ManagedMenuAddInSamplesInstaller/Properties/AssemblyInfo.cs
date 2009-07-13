@@ -8,3 +8,5 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: Guid("e9f71cae-bb41-46b7-96aa-1afcc486be66")]
+[assembly: ComVisible(false)]
+
