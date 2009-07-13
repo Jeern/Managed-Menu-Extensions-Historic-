@@ -22,6 +22,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddInManagerWinForm", "ManagedMenuAddInManagerWinForm\AddInManagerWinForm.csproj", "{0846235E-C888-4C90-B958-F5BE24385ED4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{984FAC14-24E2-4EB8-A233-0DA394E117EE}"
+	ProjectSection(SolutionItems) = preProject
+		Lib\GlobalAssemblyInfo.cs = Lib\GlobalAssemblyInfo.cs
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{65A06FF7-F1EA-4727-9DCD-5E650657A77A}"
 	ProjectSection(SolutionItems) = preProject
